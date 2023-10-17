@@ -11,7 +11,7 @@ import avatar from "./#Img_Avatar.25.png"
 const Navbar = () => {
   return (
     <AppBar position="static" color="inherit" style={{boxShadow: "None"}}>
-      <Container>
+      <Container style={{padding: '0px', maxWidth: "100%"}}>
         <Toolbar style={{ display: 'flex', justifyContent: "space-between",padding: '0px'}}>
           <Paper style={{boxShadow: "none", width: "100%"}}
             component="form"

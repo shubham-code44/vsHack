@@ -5,13 +5,13 @@ import { styled } from '@mui/system';
 const Container = styled(Paper)(({ theme }) => ({
   border: '1px solid #F4F6F8',
   borderRadius: '15px',
-  padding: '20px 15px',
+  padding: '20px 10px',
   boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-  height: "90px",
-  width: "200px",
+  height: "70px",
+  // width: "200px",
 }));
 
 const ProgressBars = styled(Box)(({ theme }) => ({
@@ -56,17 +56,17 @@ const UserBaseIndicator = ({ activeUsers, webUsers }) => {
       <Typography variant="h6" style={{fontSize: "16px",
 fontWeight: "600",
 lineHeight: "24px",
-padding: "12px 0px"
+padding: "12px 20px"
 }}>Active User Base</Typography>
     <Container>
       <Scale>
         <ScaleItem>
           <Circle bgColor="#1939B7" />
-          <Typography variant="body2">{`${activeUsers}% App User`}</Typography>
+          <Typography variant="body2" style={{fontSize: '0.680rem'}}>{`${activeUsers}% App User`}</Typography>
         </ScaleItem>
         <ScaleItem>
           <Circle bgColor="#36B37E" />
-          <Typography variant="body2">{`${webUsers}% Web User`}</Typography>
+          <Typography variant="body2" style={{fontSize: '0.680rem'}}>{`${webUsers}% Web User`}</Typography>
         </ScaleItem>
       </Scale>
       <ProgressBars>

@@ -13,7 +13,7 @@ const Dashboard = () => {
       <div style={{ flex: "15%", backgroundColor: "lightblue" }}>
         <SideMenu />
       </div>
-      <div style={{ flex: "85%", padding: "25px 20px 0px 80px" }}>
+      <div style={{ flex: "85%", padding: "25px 20px 0px 100px" }}>
         <Navbar />
         <p
           style={{
@@ -34,11 +34,11 @@ const Dashboard = () => {
             display: "flex",
             flexDirection: "row",
             gap: "8px",
-            justifyContent: "space-evenly",
+            justifyContent: "space-between",
             padding: "25px 0px",
           }}
         >
-          <div style={{ flexGrow: "1" }}>
+          <div style={{ flexGrow: "1" , flex: '50%' }}>
             <Indicator
               leftBorderColor1={"#091A7A"}
               leftBorderColor2={"#006C9C"}
@@ -52,7 +52,7 @@ const Dashboard = () => {
               value3={"89%"}
             />
           </div>
-          <div style={{ flexGrow: "2" }}>
+          <div style={{ flexGrow: "2", flex: "30%" }}>
             <Indicator
               leftBorderColor1={"#091A7A"}
               leftBorderColor3={"#006C9C"}
@@ -66,7 +66,7 @@ const Dashboard = () => {
               value3={"3"}
             />
           </div>
-          <div style={{ flexGrow: "1" }}>
+          <div style={{ flexGrow: "1", flex: '20%' }}>
             <UserBaseIndicator activeUsers={89} webUsers={11} />
           </div>
         </div>
@@ -79,10 +79,10 @@ const Dashboard = () => {
             padding: "25px 0px",
           }}
         >
-          <div style={{ flexGrow: "1" }}>
+          <div style={{ flexGrow: "1", flex: '70%'}}>
             <TableComponent />
           </div>
-          <div style={{ flexGrow: "1" }}>
+          <div style={{ flexGrow: "1", flex: '30%' }}>
             <PieChartComponent />
           </div>
         </div>

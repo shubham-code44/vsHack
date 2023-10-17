@@ -41,19 +41,19 @@ const Indicator = (props) => {
     <Typography variant="h6" style={{fontSize: "16px",
 fontWeight: "600",
 lineHeight: "24px",
-padding: "12px 0px"
+padding: "12px 20px"
 }}>{props.heading}</Typography>
     <StyledPaper elevation={0}>
       <Box display="flex" justifyContent="space-evenly">
-        <StyledSection leftBorderColor1={props.leftBorderColor1}>
+        <StyledSection leftBorderColor1={props.leftBorderColor1} style={{padding: "8px 12px"}}>
           <Typography variant="subtitle1" style={{fontSize: "15px"}}>{props.label1}</Typography>
           <Typography variant="h6" style={{color: `${props.leftBorderColor1}`, fontWeight: "700", fontSize: "20px"}}>{props.value1}</Typography>
         </StyledSection>
-        <StyledSection2 leftBorderColor2={props.leftBorderColor2}>
+        <StyledSection2 leftBorderColor2={props.leftBorderColor2} style={{padding: "8px 12px"}}>
           <Typography variant="subtitle1" style={{fontSize: "15px"}}>{props.label2}</Typography>
           <Typography variant="h6"  style={{color: `${props.leftBorderColor2}`, fontWeight: "700", fontSize: "20px"}}>{props.value2}</Typography>
         </StyledSection2>
-        <StyledSection3 leftBorderColor3={props.leftBorderColor3}>
+        <StyledSection3 leftBorderColor3={props.leftBorderColor3} style={{padding: "8px 12px"}}>
           <Typography variant="subtitle1" style={{fontSize: "15px"}}>{props.label3}</Typography>
           <Typography variant="h6"  style={{color: `${props.leftBorderColor3}`, fontWeight: "700", fontSize: "20px"}}>{props.value3}</Typography>
         </StyledSection3>
