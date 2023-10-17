@@ -15,7 +15,7 @@ const Dropdown = () => {
         width: '18%', 
       }}
     >
-      <InputLabel id="dropdown-label">Service Type</InputLabel>
+      <InputLabel id="dropdown-label" style={{fontSize: "15px"}}>Service Type</InputLabel>
       <Select
         labelId="dropdown-label"
         id="dropdown"
