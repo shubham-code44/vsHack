@@ -92,7 +92,7 @@ export default function Home() {
                 <Stack spacing={1} justifyContent="center" alignItems="center" sx={{mt: -5}}>
                         <Typography variant="h4" sx={{
                             fontSize: {md:"42px",xs:"34px"}, fontWeight: 700, fontFamily: "Futura", textDecorationLine: "underline",
-                            textDecorationThickness: "5px", textDecorationColor: "#FFA500",textUnderlineOffset: "0.5px",textUnderlinePosition: "auto",
+                            textDecorationThickness: "5px", textDecorationColor: "#FFA500",textUnderlineOffset: "0.8px",textUnderlinePosition: "auto",
                         }}>Neha Chhillar</Typography>
                         <Typography sx={{fontSize: "24px", fontWeight: 700, fontFamily: "Futura", color: "#454F5B"}}>UI/UX
                             DESIGNER</Typography>
@@ -159,13 +159,13 @@ function HomeCard({data, index}) {
                             <Box>
                                 <Typography sx={{
                                     color: data?.textcolor,
-                                    fontSize: {md:"26px",xs:"17px"},
+                                    fontSize: {md:"24px",xs:"17px"},
                                     fontWeight: 700,
                                     fontFamily: "Futura"
                                 }}>{data?.title2}</Typography>
                                 {data?.id === 3 && <Typography sx={{
                                     color: data?.textcolor,
-                                    fontSize: {md:"26px",xs:"17px"},
+                                    fontSize: {md:"24px",xs:"17px"},
                                     fontWeight: 700,
                                     fontFamily: "Futura"
                                 }}>confidence.</Typography>}

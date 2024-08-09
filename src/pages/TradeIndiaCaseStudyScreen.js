@@ -345,7 +345,7 @@ export default function TradeIndiaCaseStudyScreen() {
                         </StyledGrid>
                     </Grid>
                     <Grid  xs={12} md={10}>
-                        <Link href='mailto:contact@domain.com'>
+                        <Link href='mailto:nehachhillar07@gmail.com'>
                         <Stack  direction={{md:"row",xs:"column"}} justifyContent="space-around" alignItems="center" spacing={4} sx={{mt:5,py:5,backgroundColor:"#FFFEE0"}}>
                             <Box
                                 component="img"

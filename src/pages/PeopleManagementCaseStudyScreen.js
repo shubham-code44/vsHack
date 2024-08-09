@@ -38,6 +38,28 @@ const StyledGrid = styled('div')(({theme}) => ({
     gridTemplateColumns: "repeat(auto-fit, minmax(150px,1fr))"
 }));
 
+const pageVariants = {
+    initial: {
+        opacity: 0,
+        y: 100,
+    },
+    in: {
+        opacity: 1,
+        y: 0,
+    },
+    out: {
+        opacity: 0,
+        y: 50,
+    },
+};
+
+const pageTransition = {
+    type: "tween",
+    ease: "anticipate",
+    duration: 0.8
+};
+
+
 export default function PeopleManagementCaseStudyScreen() {
     const navigate=useNavigate()
     const STATEMENT1 = [
@@ -99,6 +121,12 @@ export default function PeopleManagementCaseStudyScreen() {
         <Box sx={{p: 2,mt:7, px: {md: 15, xs: 5}}}>
             <Grid container spacing={2} alignItems="center" justifyContent="center">
                 <Grid xs={12} sx={{borderRadius:4,border:"1px solid #D3EEB3",backgroundColor:"rgba(234, 246, 216, 0.60)", mt: 5, py: 5, px: {lg: 25, xs: 3}}}>
+                    <motion.div
+                        initial="initial"
+                        animate="in"
+                        exit="out"
+                        variants={pageVariants}
+                        transition={pageTransition}>
                     <Stack justifyContent="center" alignItems="center" sx={{p: 2}}>
                         <Box
                             component="img"
@@ -126,10 +154,17 @@ export default function PeopleManagementCaseStudyScreen() {
                             </Stack>
                         ))}
                     </StyledGrid>
+                    </motion.div>
 
                 </Grid>
                 <Grid xs={12} lg={8}
                       sx={{borderRadius: 3, border:"1px solid #D3EEB3",backgroundColor:"rgba(234, 246, 216, 0.60)", mt: 5, py: 5, px: {lg: 10, xs: 3}}}>
+                    <motion.div
+                        initial="initial"
+                        animate="in"
+                        exit="out"
+                        variants={pageVariants}
+                        transition={pageTransition}>
                     <StyledGrid>
                         {STATEMENT2?.map((item, index) => (
                             <Box sx={{
@@ -141,8 +176,15 @@ export default function PeopleManagementCaseStudyScreen() {
                             }}>{index+1}. {item}</Box>
                         ))}
                     </StyledGrid>
+                    </motion.div>
                 </Grid>
                 <Grid xs={12} lg={9} sx={{mt: 5, py: 5, px: {lg: 10, xs: 3}}}>
+                    <motion.div
+                        initial="initial"
+                        animate="in"
+                        exit="out"
+                        variants={pageVariants}
+                        transition={pageTransition}>
                     <Stack spacing={2} justifyContent="start" alignItems="start">
                         <Typography variant="h4" sx={{fontSize:{md:"30px",xs:"23px"},fontWeight: "700", fontFamily: "Public Sans", color: "#212B36"}}>Building
                             Solutions, Not just HR Management Solftware</Typography>
@@ -160,8 +202,15 @@ export default function PeopleManagementCaseStudyScreen() {
                             </Typography>
                         </Box>
                     </Stack>
+                    </motion.div>
                 </Grid>
                 <Grid xs={12} lg={9} sx={{ py: 5, px: {lg: 10, xs: 3}}}>
+                    <motion.div
+                        initial="initial"
+                        animate="in"
+                        exit="out"
+                        variants={pageVariants}
+                        transition={pageTransition}>
                             <Typography variant="h6" sx={{
                                 fontWeight: "700",
                                 fontFamily: "Public Sans",
@@ -174,7 +223,7 @@ export default function PeopleManagementCaseStudyScreen() {
                         <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#212B36"}}> •  Existing products <Typography component="span" variant="body1" sx={{backgroundColor:"#FFFEE0",fontWeight:500,fontFamily:"Public Sans",color:"#212B36"}}> fail to meet HR professionals needs </Typography> for a <Typography component="span" variant="body1" sx={{backgroundColor:"#FFFEE0",fontWeight:500,fontFamily:"Public Sans",color:"#212B36"}}> user-friendly, human-centric design. </Typography> </Typography>
                         <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#212B36"}}> •  HR Veterans fails to get a product that simplifies workflows and effectively  <Typography component="span" variant="body1" sx={{backgroundColor:"#FFFEE0",fontWeight:500,fontFamily:"Public Sans",color:"#212B36"}}> engages employees. </Typography> </Typography>
                     </Stack>
-
+                    </motion.div>
                 </Grid>
             </Grid>
         </Box>
@@ -190,6 +239,12 @@ export default function PeopleManagementCaseStudyScreen() {
             <Box sx={{p: 2, px: {md: 15, xs: 5}}}>
                 <Grid container spacing={2} alignItems="center" justifyContent="center">
                     <Grid xs={12} md={6} sx={{borderRadius:4,border:"1px solid #D3EEB3",backgroundColor:"rgba(234, 246, 216, 0.60)", mt: 5, py: 3, px: {lg: 3, xs: 3}}}>
+                        <motion.div
+                            initial="initial"
+                            animate="in"
+                            exit="out"
+                            variants={pageVariants}
+                            transition={pageTransition}>
                       <Stack spacing={2} justifyContent="start" alignItems="start">
                           <Box>
                               <Typography variant="h6" sx={{fontWeight:700,fontFamily:"Public Sans",color:"#454F5B"}}>Product Approach</Typography>
@@ -215,8 +270,15 @@ export default function PeopleManagementCaseStudyScreen() {
                               <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#637381"}}> • Deeper connection with the product and increases usability</Typography>
                           </Box>
                       </Stack>
+                        </motion.div>
                     </Grid>
                     <Grid xs={12} md={7} sx={{borderRadius:4, mt: 5, py: 3, px: {lg: 10, xs: 2}}}>
+                        <motion.div
+                            initial="initial"
+                            animate="in"
+                            exit="out"
+                            variants={pageVariants}
+                            transition={pageTransition}>
                         <Typography variant="h5" sx={{fontWeight:700,fontFamily:"Public Sans",color:"#454F5B"}}>Target Marget</Typography>
                        <StyledGrid>
                            {STATEMENT3?.map((item)=>(
@@ -232,8 +294,15 @@ export default function PeopleManagementCaseStudyScreen() {
                         <Box sx={{textAlign:"center",mt:2,p:2,borderRadius:4,border:"1px solid #D3EEB3",backgroundColor:"rgba(234, 246, 216, 0.60)"}}>
                             <Typography variant="h5" sx={{fontSize:{md:"28px",xs:"20px"},fontWeight:600,fontFamily:"Public Sans",color:"#454F5B"}}>1.1 Million Companies Startups, SME’s, Large Enterprise </Typography>
                         </Box>
+                        </motion.div>
                     </Grid>
                     <Grid xs={12} md={10} sx={{borderRadius:4, mt: 5, py: 3, px: {lg: 3, xs: 3}}}>
+                        <motion.div
+                            initial="initial"
+                            animate="in"
+                            exit="out"
+                            variants={pageVariants}
+                            transition={pageTransition}>
                         <Box
                             component="img"
                             src={caseImage3}
@@ -243,12 +312,20 @@ export default function PeopleManagementCaseStudyScreen() {
                                 height: 'auto', // Maintains aspect ratio
                             }}
                         />
+                        </motion.div>
                     </Grid>
                     <Grid xs={12} md={10} sx={{borderRadius:4, mt: 5, py: 3, px: {lg: 3, xs: 3}}}>
                         <Typography variant="h4" sx={{fontSize:{md:"30px",xs:"23px"},fontWeight:700,fontFamily:"Public Sans",color:"#454F5B"}}>Navigation System</Typography>
                         <Typography variant="h5" sx={{fontSize:{md:"25px",xs:"17px"},mt:2,fontWeight:700,fontFamily:"Public Sans",color:"#454F5B"}}>Ideation / Approachable design Strategy</Typography>
                         <Grid container spacing={2} alignItems="start" justifyContent="center" sx={{mt:2,}}>
+
                             <Grid xs={12} md={6} >
+                                <motion.div
+                                    initial="initial"
+                                    animate="in"
+                                    exit="out"
+                                    variants={pageVariants}
+                                    transition={pageTransition}>
                                 <Box
                                     component="img"
                                     src={caseImage4}
@@ -258,26 +335,45 @@ export default function PeopleManagementCaseStudyScreen() {
                                         height: 'auto', // Maintains aspect ratio
                                     }}
                                 />
+                                </motion.div>
                             </Grid>
                             <Grid xs={12} md={6} sx={{px:2}} >
+                                <motion.div
+                                    initial="initial"
+                                    animate="in"
+                                    exit="out"
+                                    variants={pageVariants}
+                                    transition={pageTransition}>
                              <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#919EAB"}}>Iteration 1</Typography>
                              <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#454F5B"}}>Navigation bar has 4 major sections My Space, Team Space, HR Space, Admin. Each section has 10+ modules that can further expand with submodules.</Typography>
                                 <Typography variant="body1" sx={{mt:2,fontWeight:600,fontFamily:"Public Sans",color:"#212B36"}}> • Personalize their experience with their own branding and theme</Typography>
                                 <Typography variant="body1" sx={{fontWeight:600,fontFamily:"Public Sans",color:"#212B36"}}> • Deeper connection with the product and increases usability</Typography>
-
+                                </motion.div>
                             </Grid>
                         </Grid>
                     </Grid>
                     <Grid xs={12} md={10} sx={{borderRadius:4, mt: 5, py: 3, px: {lg: 3, xs: 3}}}>
                         <Grid container spacing={2} alignItems="start" justifyContent="center" sx={{mt:2,}}>
                             <Grid xs={12} md={6} sx={{px:2}} >
+                                <motion.div
+                                    initial="initial"
+                                    animate="in"
+                                    exit="out"
+                                    variants={pageVariants}
+                                    transition={pageTransition}>
                                 <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#919EAB"}}>Iteration 1</Typography>
                                 <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#454F5B"}}>Navigation bar has 4 major sections My Space, Team Space, HR Space, Admin. Each section has 10+ modules that can further expand with submodules.</Typography>
                                 <Typography variant="body1" sx={{mt:2,fontWeight:600,fontFamily:"Public Sans",color:"#212B36"}}> • Personalize their experience with their own branding and theme</Typography>
                                 <Typography variant="body1" sx={{fontWeight:600,fontFamily:"Public Sans",color:"#212B36"}}> • Deeper connection with the product and increases usability</Typography>
-
+                                </motion.div>
                             </Grid>
                             <Grid xs={12} md={6} >
+                                <motion.div
+                                    initial="initial"
+                                    animate="in"
+                                    exit="out"
+                                    variants={pageVariants}
+                                    transition={pageTransition}>
                                 <Box
                                     component="img"
                                     src={caseImage5}
@@ -287,11 +383,17 @@ export default function PeopleManagementCaseStudyScreen() {
                                         height: 'auto', // Maintains aspect ratio
                                     }}
                                 />
-
+                                </motion.div>
                             </Grid>
                         </Grid>
                     </Grid>
                     <Grid xs={12} sx={{borderRadius:4, mt: 3, py: 3, px: {lg: 3, xs: 3}}}>
+                        <motion.div
+                            initial="initial"
+                            animate="in"
+                            exit="out"
+                            variants={pageVariants}
+                            transition={pageTransition}>
                         <Stack justifyContent="center" alignItems="center">
                             <ReactPlayer
                                 url={Web}
@@ -305,8 +407,15 @@ export default function PeopleManagementCaseStudyScreen() {
                             />
 
                         </Stack>
+                        </motion.div>
                     </Grid>
                     <Grid xs={12} md={6} sx={{borderRadius:4,border:"1px solid #D3EEB3",backgroundColor:"rgba(234, 246, 216, 0.60)", mt: 5, py: 3, px: {lg: 3, xs: 3}}}>
+                        <motion.div
+                            initial="initial"
+                            animate="in"
+                            exit="out"
+                            variants={pageVariants}
+                            transition={pageTransition}>
                         <Stack spacing={2} justifyContent="start" alignItems="start">
                             <Box>
                                 <Typography variant="h6" sx={{fontWeight:700,fontFamily:"Public Sans",color:"#454F5B"}}>UX Approach Implemented</Typography>
@@ -317,12 +426,19 @@ export default function PeopleManagementCaseStudyScreen() {
                                 <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#637381"}}> • Pin App allows users to select favourite and important app, that can be accessed anytime.</Typography>
                             </Box>
                         </Stack>
+                        </motion.div>
                     </Grid>
                     <Grid xs={12} md={10} sx={{borderRadius:4, mt: 5, py: 3, px: {lg: 3, xs: 3}}}>
                         <Typography variant="h4" sx={{fontSize:{md:"30px",xs:"23px"},fontWeight:700,fontFamily:"Public Sans",color:"#454F5B"}}>Personalized Theme</Typography>
                         <Typography variant="h5" sx={{fontSize:{md:"23px",xs:"17px"},mt:2,fontWeight:700,fontFamily:"Public Sans",color:"#454F5B"}}>Ideation / Approachable design Strategy</Typography>
                         <Grid container spacing={2} alignItems="start" justifyContent="center" sx={{mt:2,}}>
                             <Grid xs={12} md={6} >
+                                <motion.div
+                                    initial="initial"
+                                    animate="in"
+                                    exit="out"
+                                    variants={pageVariants}
+                                    transition={pageTransition}>
                                 <Box
                                     component="img"
                                     src={caseImage6}
@@ -332,8 +448,15 @@ export default function PeopleManagementCaseStudyScreen() {
                                         height: 'auto', // Maintains aspect ratio
                                     }}
                                 />
+                                </motion.div>
                             </Grid>
                             <Grid xs={12} md={6} sx={{px:2}} >
+                                <motion.div
+                                    initial="initial"
+                                    animate="in"
+                                    exit="out"
+                                    variants={pageVariants}
+                                    transition={pageTransition}>
                                 <Box>
                                 <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#919EAB"}}>Iteration 1</Typography>
                                 <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#454F5B"}}>Keep color theme open for users to select as per the choice.</Typography>
@@ -345,10 +468,17 @@ export default function PeopleManagementCaseStudyScreen() {
                                     <Typography variant="body1" sx={{mt:2,fontWeight:600,fontFamily:"Public Sans",color:"#212B36"}}> Accordingly, Per client’s need color will be change from admin setting and all user’s will be engaged as per set brand’s palette.</Typography>
 
                                 </Box>
+                                </motion.div>
                             </Grid>
                         </Grid>
                     </Grid>
                     <Grid xs={12} md={10} sx={{borderRadius:4, mt: 5, py: 3, px: {lg: 3, xs: 3}}}>
+                        <motion.div
+                            initial="initial"
+                            animate="in"
+                            exit="out"
+                            variants={pageVariants}
+                            transition={pageTransition}>
                         <StyledGrid>
                             <Box
                                 component="img"
@@ -378,8 +508,15 @@ export default function PeopleManagementCaseStudyScreen() {
                                 }}
                             />
                         </StyledGrid>
+                        </motion.div>
                     </Grid>
                     <Grid xs={12} md={6} sx={{borderRadius:4,border:"1px solid #D3EEB3",backgroundColor:"rgba(234, 246, 216, 0.60)", mt: 5, py: 3, px: {lg: 3, xs: 3}}}>
+                        <motion.div
+                            initial="initial"
+                            animate="in"
+                            exit="out"
+                            variants={pageVariants}
+                            transition={pageTransition}>
                         <Stack spacing={2} justifyContent="start" alignItems="start">
                             <Box>
                                 <Typography variant="h6" sx={{fontWeight:700,fontFamily:"Public Sans",color:"#454F5B"}}>UX Approach Implemented</Typography>
@@ -390,8 +527,15 @@ export default function PeopleManagementCaseStudyScreen() {
                                 <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#637381"}}> • It enables usability and user screen time increase.</Typography>
                             </Box>
                         </Stack>
+                        </motion.div>
                     </Grid>
                     <Grid xs={12} md={10} sx={{borderRadius:4, mt: 5, py: 3, px: {lg: 3, xs: 3}}}>
+                        <motion.div
+                            initial="initial"
+                            animate="in"
+                            exit="out"
+                            variants={pageVariants}
+                            transition={pageTransition}>
                         <Typography variant="h5" sx={{mb:2,fontWeight:700,fontFamily:"Public Sans",color:"#454F5B"}}>Ideation | Product Strategies.</Typography>
                         <Box
                             component="img"
@@ -402,13 +546,21 @@ export default function PeopleManagementCaseStudyScreen() {
                                 height: 'auto', // Maintains aspect ratio
                             }}
                         />
+                        </motion.div>
                         </Grid>
                     <Grid xs={12} md={6} sx={{borderRadius:4, mt: 2, py: 3, px: {lg: 3, xs: 3}}}>
+                        <motion.div
+                            initial="initial"
+                            animate="in"
+                            exit="out"
+                            variants={pageVariants}
+                            transition={pageTransition}>
                         <Stack spacing={3} >
                             <Typography variant="body1" sx={{textAlign:"center",fontWeight:500,fontFamily:"Public Sans",color:"#454F5B"}}> For ideation, strategizing, and product discussions, I prefer using pen and paper, a whiteboard, or sketching over any digital tools. This approach allows for a free flow of creativity, enabling countless possible ideas to emerge.</Typography>
                             <Typography variant="body1" sx={{textAlign:"center",fontWeight:700,fontFamily:"Public Sans",color:"#637381"}}> For both web and app development, I used this method for each module and submodule to understand, create solutions, finalize the flow, and determine possible features for MVP 1</Typography>
 
                         </Stack>
+                        </motion.div>
                     </Grid>
                 </Grid>
             </Box>
@@ -434,14 +586,27 @@ export default function PeopleManagementCaseStudyScreen() {
             <Box sx={{p: 2, px: {md: 15, xs: 5}}}>
                 <Grid container spacing={2} alignItems="center" justifyContent="center">
                     <Grid xs={12} md={8} sx={{mt: 5, py: 3, px: {lg: 3, xs: 3}}}>
+                        <motion.div
+                            initial="initial"
+                            animate="in"
+                            exit="out"
+                            variants={pageVariants}
+                            transition={pageTransition}>
                         <Typography variant="h5" sx={{mb:2,fontWeight:700,fontFamily:"Public Sans",color:"#454F5B"}}>Design System</Typography>
                                 <Typography variant="body2" sx={{fontWeight:400,fontFamily:"Public Sans",color:"#454F5B"}}>To establish a unified design system ensuring consistent user interface (UI) elements across both web and mobile applications, thereby enhancing overall product cohesion and user experience.</Typography>
                             <Box sx={{mt:3}}>
                                 <Typography variant="body1" sx={{fontWeight:600,fontFamily:"Public Sans",color:"#212B36"}}>I Developed a comprehensive design system that included a library of reusable components, standardized color palettes, typography, and layout grids. </Typography>
                                 <Typography variant="body1" sx={{mt:1.5,fontWeight:600,fontFamily:"Public Sans",color:"#212B36"}}> Handed over the design system components to the development team. </Typography>
                             </Box>
+                        </motion.div>
                     </Grid>
                     <Grid xs={12} md={8} sx={{mt: 1, py: 3, px: {lg: 3, xs: 3}}}>
+                        <motion.div
+                            initial="initial"
+                            animate="in"
+                            exit="out"
+                            variants={pageVariants}
+                            transition={pageTransition}>
                         <Box
                             component="img"
                             src={caseImage13}
@@ -452,8 +617,15 @@ export default function PeopleManagementCaseStudyScreen() {
                                 height: 'auto', // Maintains aspect ratio
                             }}
                         />
+                        </motion.div>
                     </Grid>
                     <Grid xs={12} md={10} sx={{mt: 1, py: 3, px: {lg: 3, xs: 3}}}>
+                        <motion.div
+                            initial="initial"
+                            animate="in"
+                            exit="out"
+                            variants={pageVariants}
+                            transition={pageTransition}>
                         <Stack spacing={3}>
                             <Typography variant="h5" sx={{mb:2,fontWeight:700,fontFamily:"Public Sans",color:"#454F5B"}}>Hi-Fi Designs</Typography>
                             <Typography variant="h4" sx={{fontSize:{md:"30px",xs:"23px"},mb:2,fontWeight:700,fontFamily:"Public Sans",color:"#161C24"}}>Login Screen</Typography>
@@ -468,8 +640,15 @@ export default function PeopleManagementCaseStudyScreen() {
                                 }}
                             />
                         </Stack>
+                        </motion.div>
                     </Grid>
                     <Grid xs={12} md={10} sx={{mt: 1, py: 3, px: {lg: 3, xs: 3}}}>
+                        <motion.div
+                            initial="initial"
+                            animate="in"
+                            exit="out"
+                            variants={pageVariants}
+                            transition={pageTransition}>
                         <Stack spacing={3}>
                              <Typography variant="h4" sx={{fontSize:{md:"30px",xs:"23px"},mb:2,fontWeight:700,fontFamily:"Public Sans",color:"#161C24"}}>Home Page</Typography>
                             <Box
@@ -483,8 +662,15 @@ export default function PeopleManagementCaseStudyScreen() {
                                 }}
                             />
                         </Stack>
+                        </motion.div>
                     </Grid>
                     <Grid xs={12} md={10} sx={{mt: 1, py: 3, px: {lg: 3, xs: 3}}}>
+                        <motion.div
+                            initial="initial"
+                            animate="in"
+                            exit="out"
+                            variants={pageVariants}
+                            transition={pageTransition}>
                         <Stack spacing={3}>
                             <Typography variant="h4" sx={{fontSize:{md:"30px",xs:"23px"},mb:2,fontWeight:700,fontFamily:"Public Sans",color:"#161C24"}}>Time Office</Typography>
                             <Box
@@ -498,8 +684,15 @@ export default function PeopleManagementCaseStudyScreen() {
                                 }}
                             />
                         </Stack>
+                        </motion.div>
                     </Grid>
                     <Grid xs={12} md={10} sx={{mt: 1, py: 3, px: {lg: 3, xs: 3}}}>
+                        <motion.div
+                            initial="initial"
+                            animate="in"
+                            exit="out"
+                            variants={pageVariants}
+                            transition={pageTransition}>
                         <Stack spacing={3}>
                             <Typography variant="h4" sx={{fontSize:{md:"30px",xs:"23px"},mb:2,fontWeight:700,fontFamily:"Public Sans",color:"#161C24"}}>Performance</Typography>
                             <Box
@@ -513,8 +706,15 @@ export default function PeopleManagementCaseStudyScreen() {
                                 }}
                             />
                         </Stack>
+                        </motion.div>
                     </Grid>
                     <Grid xs={12} md={10} sx={{mt: 1, py: 3, px: {lg: 3, xs: 3}}}>
+                        <motion.div
+                            initial="initial"
+                            animate="in"
+                            exit="out"
+                            variants={pageVariants}
+                            transition={pageTransition}>
                         <Stack spacing={3}>
                             <Typography variant="h4" sx={{fontSize:{md:"30px",xs:"23px"},mb:2,fontWeight:700,fontFamily:"Public Sans",color:"#161C24"}}>Learnings</Typography>
                             <Box
@@ -528,8 +728,15 @@ export default function PeopleManagementCaseStudyScreen() {
                                 }}
                             />
                         </Stack>
+                        </motion.div>
                     </Grid>
                     <Grid xs={12} md={8} sx={{mt: 1, py: 3, px: {lg: 3, xs: 3}}}>
+                        <motion.div
+                            initial="initial"
+                            animate="in"
+                            exit="out"
+                            variants={pageVariants}
+                            transition={pageTransition}>
                         <Stack spacing={3} justifyContent="start" alignItems="start">
                             <Typography variant="h6" sx={{fontSize:{md:"22px",xs:"15px"},mb:2,fontWeight:600,fontFamily:"Public Sans",color:"#000"}}>Here are the high-fidelity designs for an overview of each module. You can access the full product using the credentials below:</Typography>
                                <Box sx={{p:2,borderRadius:4,border:"1px solid #D3EEB3",backgroundColor:"rgba(234, 246, 216, 0.60)"}}>
@@ -540,24 +747,32 @@ export default function PeopleManagementCaseStudyScreen() {
                             <Typography variant="h5" sx={{fontSize:{md:"22px",xs:"15px"},mb:2,fontWeight:700,fontFamily:"Public Sans",color:"#161C24"}}>Feel free to explore the live product :)</Typography>
 
                         </Stack>
+                        </motion.div>
                     </Grid>
                 </Grid>
             </Box>
             <Box sx={{p: 2,backgroundColor:"rgba(234, 246, 216, 0.60)"}}>
                 <Grid container spacing={2} alignItems="center" justifyContent="center">
                     <Grid xs={12} md={8} sx={{mt: 5, py: 3, px: {lg: 3, xs: 3}}}>
+                        <motion.div
+                            initial="initial"
+                            animate="in"
+                            exit="out"
+                            variants={pageVariants}
+                            transition={pageTransition}>
                         <Typography variant="body1" sx={{fontWeight:700,fontFamily:"Public Sans",color:"#000"}}>After creating high-fidelity designs, we prototyped each module for initial testing across multiple departments.</Typography>
                         <Typography variant="body1" sx={{mt:4,fontWeight:700,fontFamily:"Public Sans",color:"#000"}}>After creating high-fidelity designs, we prototyped each module for initial testing across multiple departments. This testing aimed to understand how quickly users could perform actions, identify if they needed assistance with any tasks, and uncover any concerns that arose during internal testing.
                             After creating high-fidelity designs, we prototyped each module for initial testing across multiple departments .</Typography>
+                        </motion.div>
                     </Grid>
-                    <Stack spacing={3} direction={{md:"row",xs:"column"}} alignItems="center" justifyContent="center">
+                    <Stack spacing={3} direction={{md:"row",xs:"column"}} sx={{px: {lg: 0, xs: 3}}} alignItems="center" justifyContent="center">
                         <Box
                             component="img"
                             src={caseImage20}
                             alt="Responsive"
                             sx={{
                                 width: {md:"93%",xs:"100%"}, // Makes the image responsive
-                                height: "auto", // Maintains aspect ratio 
+                                height: "auto", // Maintains aspect ratio
                             }}/>
                         <ReactPlayer
                             url={mobile}
@@ -576,6 +791,12 @@ export default function PeopleManagementCaseStudyScreen() {
                     <Box sx={{p: 2, px: {md: 15, xs: 5}}}>
                         <Grid container spacing={2} alignItems="center" justifyContent="center">
                     <Grid xs={12} md={8} sx={{mt: 5, py: 3, px: {lg: 3, xs: 3}}}>
+                        <motion.div
+                            initial="initial"
+                            animate="in"
+                            exit="out"
+                            variants={pageVariants}
+                            transition={pageTransition}>
                         <Stack spacing={2} justifyContent="start" alignItems="start">
                             <Typography variant="h4" sx={{fontSize:{md:"30px",xs:"23px"},fontWeight:700,fontFamily:"Public Sans",color:"#161C24"}}>Usability Testing</Typography>
                             <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#454F6B"}}>I consider usability testing as a key part of the design process which can defined by 5 components: learnability, efficiency, memorability, error, and satisfaction. In a nutshell, usability is an essential factor that plays a vital role in success of a product.</Typography>
@@ -589,8 +810,15 @@ export default function PeopleManagementCaseStudyScreen() {
                                 ))}
                             </StyledGrid>
                         </Stack>
+                        </motion.div>
                     </Grid>
                     <Grid xs={12} md={8} sx={{ py: 3, px: {lg: 3, xs: 3}}}>
+                        <motion.div
+                            initial="initial"
+                            animate="in"
+                            exit="out"
+                            variants={pageVariants}
+                            transition={pageTransition}>
                         <StyledGrid>
                             {STATEMENT5?.map((item)=>(
                                 <Box sx={{p:2,borderRadius:4,border:"1px solid #D3EEB3",backgroundColor:"rgba(234, 246, 216, 0.60)", }}>
@@ -601,8 +829,15 @@ export default function PeopleManagementCaseStudyScreen() {
                                 </Box>
                             ))}
                         </StyledGrid>
+                        </motion.div>
                     </Grid>
                     <Grid item xs={12} md={10}  sx={{mt:5,mx:{md:10,xs:2}}}>
+                        <motion.div
+                            initial="initial"
+                            animate="in"
+                            exit="out"
+                            variants={pageVariants}
+                            transition={pageTransition}>
                          <StyledGrid>
                              {CARD_CONTENT?.map((data)=>(
                                  <Stack onClick={() => navigate(data?.case)} spacing={3} sx={{cursor:"pointer",px:4,py:2,backgroundColor:data?.bgcolor}}>
@@ -623,9 +858,16 @@ export default function PeopleManagementCaseStudyScreen() {
                                  </Stack>
                              ))}
                          </StyledGrid>
+                        </motion.div>
                     </Grid>
                     <Grid  xs={12} md={10}>
-                        <Link href='mailto:contact@domain.com'>
+                        <motion.div
+                            initial="initial"
+                            animate="in"
+                            exit="out"
+                            variants={pageVariants}
+                            transition={pageTransition}>
+                        <Link href='mailto:nehachhillar07@gmail.com'>
                         <Stack direction={{md:"row",xs:"column"}} justifyContent="space-around" alignItems="center" spacing={4} sx={{mt:5,py:5,backgroundColor:"#FFFEE0"}}>
                             <Box
                                 component="img"
@@ -650,6 +892,7 @@ export default function PeopleManagementCaseStudyScreen() {
                                 }}>{connect}</Typography>
                         </Stack>
                         </Link>
+                        </motion.div>
                     </Grid>
                 </Grid>
             </Box>

@@ -62,9 +62,9 @@ const Navbar = () => {
                 ))}
             </Box> */}
                 <Accordion expanded={expanded} sx={{
-                    background: 'rgba(255, 255, 255, 0.1)', // Semi-transparent background
-                    backdropFilter: 'blur(1px)', // Blur the background
-                    boxShadow: '0', // Subtle shadow for depth
+                    backgroundColor: "transparent",
+                    backgroundImage: "none",
+                    boxShadow: "0",
                     border: 'none', // Border to enhance glass effect
                 }}>
                     <AccordionSummary
@@ -106,7 +106,7 @@ const Navbar = () => {
                                             fontFamily: "Futura",
                                             color: "#212B36"
                                         }}>About</Typography>
-                                        <Link href='mailto:contact@domain.com'>
+                                        <Link href='mailto:nehachhillar07@gmail.com'>
                                             <Typography sx={{
                                                 '&:hover': {
                                                     textDecorationLine: "underline",

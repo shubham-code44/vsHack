@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import {Container, Grid, Typography, Stack,Box} from "@mui/material";
 import useResponsive from "../hooks/UseResponsive";
 import {useTheme, styled} from "@mui/material/styles";
@@ -10,6 +11,29 @@ const StyledTypography = styled(Typography)(({theme}) => ({
     fontFamily: 'Poppins',
     fontWeight: '400',
 }));
+
+
+const pageVariants = {
+    initial: {
+        opacity: 0,
+        y: 100,
+    },
+    in: {
+        opacity: 1,
+        y: 0,
+    },
+    out: {
+        opacity: 0,
+        y: 50,
+    },
+};
+
+const pageTransition = {
+    type: "tween",
+    ease: "anticipate",
+    duration: 0.8
+};
+
 
 export default function About() {
     return (
@@ -35,6 +59,12 @@ function Who() {
             justifyContent={{xs: 'center', md: 'space-between'}}
             sx={{height: 1}}>
             <Grid item xs={12} md={6} lg={5}>
+                <motion.div
+                    initial="initial"
+                    animate="in"
+                    exit="out"
+                    variants={pageVariants}
+                    transition={pageTransition}>
                 <Stack spacing={2} direction="column" justifyContent="center" alignItems="center">
                     <Box
                         component="img"
@@ -46,9 +76,15 @@ function Who() {
                         }}
                     />
                 </Stack>
+                </motion.div>
             </Grid>
             <Grid item xs={12} md={6} lg={7} sx={{mt:7}}>
-
+                <motion.div
+                    initial="initial"
+                    animate="in"
+                    exit="out"
+                    variants={pageVariants}
+                    transition={pageTransition}>
                     <Typography variant="h6" sx={{fontWeight: '600'}}>Hello,
                         <Typography
                             variant="subtitle2"
@@ -62,7 +98,13 @@ function Who() {
                             Thanks for dropping by, Neha Chhillar's profile. She crafts simple, effective designs that resonate with users and meet business goals. In high-pressure situations, her calm approach harmonizes with tight deadlines and complex team dynamics.
                               </Typography>
                     </Typography>
-
+                </motion.div>
+                <motion.div
+                    initial="initial"
+                    animate="in"
+                    exit="out"
+                    variants={pageVariants}
+                    transition={pageTransition}>
                 <Typography  variant="subtitle2"
                     sx={{
                         fontSize: 20,
@@ -72,6 +114,7 @@ function Who() {
                     }}>
                     Outside of design, spending time with family fills her with joy and inspiration, which she carries into her work. This harmony of personal happiness and professional dedication nourishes her creativity.
                        </Typography>
+                </motion.div>
               {/*  <Stack sx={{mt:2}}>
                     <Typography  variant="h6" sx={{fontWeight:600}}>
                         My Design Process :-
@@ -101,6 +144,12 @@ function Who() {
                         </Typography>
                     </Typography>
                 </Stack> */}
+                <motion.div
+                    initial="initial"
+                    animate="in"
+                    exit="out"
+                    variants={pageVariants}
+                    transition={pageTransition}>
                 <Typography  variant="subtitle2"
                              sx={{
                                  fontSize: 20,
@@ -110,6 +159,13 @@ function Who() {
                              }}>
                     She loves to travel and learn about different cultures. It helps her bring new ideas and perspectives into her work.
                          </Typography>
+                </motion.div>
+                <motion.div
+                    initial="initial"
+                    animate="in"
+                    exit="out"
+                    variants={pageVariants}
+                    transition={pageTransition}>
                 <Typography  variant="subtitle2"
                              sx={{
                                  fontSize: 20,
@@ -131,6 +187,7 @@ function Who() {
                         }}
                     />
                 </Stack>
+                </motion.div>
             </Grid>
         </Grid>
     );

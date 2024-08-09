@@ -1,12 +1,12 @@
 const PATH_DASHBOARD = {
-    root: '/dashboard',
-    profile: '/dashboard/mySpace/home',
-    about: '/dashboard/mySpace/about',
-    resume: '/dashboard/mySpace/resume',
-    home: '/dashboard/mySpace/home',
-    caseStudy1: '/dashboard/mySpace/caseStudy1',
-    caseStudy2: '/dashboard/mySpace/caseStudy2',
-    caseStudy3: '/dashboard/mySpace/caseStudy3',
+    root: '/ncDesign',
+    profile: '/ncDesign/myspace/home',
+    about: '/ncDesign/myspace/about',
+    resume: '/ncDesign/myspace/resume',
+    home: '/ncDesign/myspace/home',
+    caseStudy1: '/ncDesign/myspace/caseStudy1',
+    caseStudy2: '/ncDesign/myspace/caseStudy2',
+    caseStudy3: '/ncDesign/myspace/caseStudy3',
     settings: '/login',
     // Add more paths as needed
 };

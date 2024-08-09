@@ -18,14 +18,14 @@ export default function Router() {
     return useRoutes([
         {
             path: '/',
-            element: <Navigate to="/dashboard/mySpace/home" replace />,
+            element: <Navigate to="/ncDesign/myspace/home" replace />,
         },
         {
-            path: 'dashboard',
+            path: 'ncDesign',
             element: <MainLayout />,
             children: [
                 {
-                    path: 'mySpace',
+                    path: 'myspace',
                     children: [
                         {path: 'about', element:  <About />},
                         {path: 'resume', element:  <Resume />},

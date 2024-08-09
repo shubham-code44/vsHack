@@ -106,6 +106,7 @@ export default function WebDesignCaseStudyScreen()
         <Box sx={{p: 2,mt:7,px:{md:12,xs:5}}}>
             <Stack justifyContent="center" alignItems="center">
                 <Stack spacing={1} justifyContent="center" alignItems="center" sx={{mt:5}}>
+
                      <Typography sx={{fontSize:"16px",fontWeight:500,fontFamily:"Futura",color:"#637381",fontStyle:"italic"}}>Digital Platform For A SaaS Product</Typography>
                     <Link href="https://texlaculture.ai/" underline="none">
                     <Stack direction="row" alignItems="center" gap={1} sx={{mt:4}}>
@@ -118,6 +119,12 @@ export default function WebDesignCaseStudyScreen()
                     </Stack>
                     <Grid container spacing={2} alignItems="start" justifyContent="center" sx={{px:{lg:35,xs:"10"}}} >
                         <Grid  xs={12} sx={{mt:2}}>
+                            <motion.div
+                                initial="initial"
+                                animate="in"
+                                exit="out"
+                                variants={pageVariants}
+                                transition={pageTransition}>
                             <Box
                                 component="img"
                                 src={caseImage12}
@@ -127,6 +134,7 @@ export default function WebDesignCaseStudyScreen()
                                     height: 'auto', // Maintains aspect ratio
                                 }}
                             />
+                            </motion.div>
                         </Grid>
                     {CHALLENGES?.map((item)=>(
                        <>
@@ -576,7 +584,7 @@ export default function WebDesignCaseStudyScreen()
                             </StyledGrid>
                         </Grid>
                         <Grid  xs={12} md={10}>
-                            <Link href='mailto:contact@domain.com'>
+                            <Link href='mailto:nehachhillar07@gmail.com'>
                             <Stack direction={{md:"row",xs:"column"}} justifyContent="space-around" alignItems="center" spacing={4} sx={{mt:5,py:5,backgroundColor:"#FFFEE0"}}>
                                 <Box
                                     component="img"
