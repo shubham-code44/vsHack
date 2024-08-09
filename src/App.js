@@ -1,16 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-import SideMenu from './Components/sidemenu';
-import Navbar from './Components/navbar';
-import Dashboard from './Pages/dashboard';
-
+import React from 'react';
+import {BrowserRouter as Router} from 'react-router-dom';
+import Routes from './routes/Router';
+import ScrollToTop from "./Components/scroll-to-top";
 
 function App() {
-  return (
-    <>
-<Dashboard/>
-   </>
-  );
+    return (
+        <Router>
+            <ScrollToTop/>
+                <Routes/>
+        </Router>
+    );
 }
 
 export default App;
