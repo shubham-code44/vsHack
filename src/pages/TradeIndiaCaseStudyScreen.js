@@ -2,13 +2,13 @@ import React, {useState} from "react";
 import {motion, useAnimation} from 'framer-motion';
 import {Box, Grid, List, ListItem, ListItemButton, ListItemIcon, ListItemText,Link, Stack, Typography} from "@mui/material";
 import TrendingFlatIcon from "@mui/icons-material/TrendingFlat";
-import caseImage1 from "../images/caseStudy3/caseImage1.png"
 import caseImage2 from "../images/caseStudy3/caseImage2.png"
 import caseImage3 from "../images/caseStudy3/caseImage3.png"
 import caseImage4 from "../images/caseStudy3/caseImage4.png"
 import caseImage5 from "../images/caseStudy3/caseImage5.png"
 import caseImage6 from "../images/caseStudy3/caseImage6.png"
 import caseImage7 from "../images/caseStudy3/caseImage7.png"
+import caseImage8 from "../images/caseStudy3/caseImage8.png"
 import {PATH_DASHBOARD} from "../routes/paths";
 import caseImage11 from "../images/caseStudy1/caseImage11.png";
 import {useInView} from "react-intersection-observer";
@@ -122,7 +122,7 @@ export default function TradeIndiaCaseStudyScreen() {
                             <Box />
                             <Box
                                 component="img"
-                                src={caseImage6}
+                                src={caseImage8}
                                 alt="Responsive"
                                 sx={{
                                     width: {sm:'16%',xs:"100%"}, // Makes the image responsive
@@ -139,7 +139,7 @@ export default function TradeIndiaCaseStudyScreen() {
                                 }}
                             />
                         </Stack>
-                            <Stack spacing={2} justifyContent="center" alignItems="center" sx={{mt:5}}>
+                            <Stack spacing={2} justifyContent={{md:"center",xs:"start"}} alignItems={{md:"center",xs:"start"}} sx={{mt:5}}>
                                 <Typography variant="h5" sx={{fontSize:{md:"16px",xs:"12px"},fontWeight:700,fontFamily:"Poppins",color:"#212B36"}} >
                                     Project: Redesign Trade India’s About us page
                                 </Typography>
@@ -160,7 +160,7 @@ export default function TradeIndiaCaseStudyScreen() {
                             variants={pageVariants}
                             transition={pageTransition}
                         >
-                        <Typography variant="body1" sx={{mt: 3}}>
+                        <Typography variant="body1" sx={{mt: 3,fontFamily:"Poppins",fontWeight:600,color:"#212B36",textAlign:"center",fontSize:{md:"14px",xs:"12px"}}}>
                             After analyzing Trade India’s website and the overall vibe and voice of the brand, I
                             realized the nature of the business needs more content, having multiple type of users
                             (manufacturers, Suppliers, Buyers), multiple product categories that need user’s trust to
@@ -179,10 +179,10 @@ export default function TradeIndiaCaseStudyScreen() {
                         <Box sx={{px:4,pt:4,pb:1,backgroundColor:"#F9FAFB"}}>
                         {SET?.map((item,index) => (
                             <>
-                                <Typography variant="body1" >
+                                <Typography variant="body1" sx={{color:"#454F5B",fontFamily:"Poppins",fontWeight:500}} >
                                     {item?.title}
                                 </Typography>
-                                <Typography variant="body1" sx={{mb:3}}>
+                                <Typography variant="body1" sx={{mb:3,fontFamily:"Poppins",fontWeight:600,color:"#212B36",fontSize:{md:"14px",xs:"12px"}}}>
                                     {item?.description}
                                 </Typography>
                             </>
@@ -199,9 +199,9 @@ export default function TradeIndiaCaseStudyScreen() {
                             transition={pageTransition}
                         >
                         <Stack spacing={2} justifyContent="start" alignItems="start">
-                            <Typography variant="h5" sx={{fontWeight:600,color:"#E11B22"}}>Problem Statement</Typography>
+                            <Typography variant="h5" sx={{fontWeight:600,color:"#E11B22",fontFamily:"Poppins"}}>Problem Statement</Typography>
                             {STATEMENT?.map((item)=>(
-                                <Typography variant="body1" sx={{fontWeight:600,fontFamily:"Poppins",color:"#637381"}}> {item?.title} <Typography component="span" variant="body1" sx={{fontWeight:600,fontFamily:"Poppins",color:"#212B36"}}>{item?.description}</Typography></Typography>
+                                <Typography variant="body1" sx={{fontWeight:600,fontFamily:"Poppins",color:"#637381",fontSize:"14px"}}> {item?.title} <Typography component="span" variant="body1" sx={{fontSize:"14px",fontWeight:600,fontFamily:"Poppins",color:"#212B36"}}>{item?.description}</Typography></Typography>
 
                             ))}
                         </Stack>
@@ -216,9 +216,9 @@ export default function TradeIndiaCaseStudyScreen() {
                             transition={pageTransition}
                         >
                         <Stack spacing={2} justifyContent="start" alignItems="start">
-                            <Typography variant="h5" sx={{fontWeight:600,color:"#FFC20E"}}>Key Insights</Typography>
+                            <Typography variant="h5" sx={{fontFamily:"Poppins",fontWeight:600,color:"#FFC20E",fontSize:{md:"33px",xs:"25px"}}}>Key Insights</Typography>
                             {STATEMENT2?.map((item)=>(
-                                <Typography variant="body1" sx={{fontWeight:600,fontFamily:"Poppins",color:"#637381"}}> {item?.title} <Typography component="span" variant="body1" sx={{fontWeight:600,fontFamily:"Poppins",color:"#212B36"}}>{item?.description}</Typography></Typography>
+                                <Typography variant="body1" sx={{fontWeight:600,fontFamily:"Poppins",color:"#454F5B",fontSize:"14px"}}> {item?.title} <Typography component="span" variant="body1" sx={{fontSize:"14px",fontWeight:600,fontFamily:"Poppins",color:"#212B36"}}>{item?.description}</Typography></Typography>
 
                             ))}
                         </Stack>
@@ -234,11 +234,11 @@ export default function TradeIndiaCaseStudyScreen() {
                         >
                         <Stack spacing={2} justifyContent="start" alignItems="start">
                             <Box>
-                            <Typography variant="h5" sx={{fontWeight:600,color:"#36F"}}>Competitors Analysis </Typography>
-                            <Typography variant="h6" sx={{fontWeight:600}}>I studied two major competitors - Alibaba (globally spreaded) IndiaMart (Indian Market) </Typography>
+                            <Typography variant="h5" sx={{fontWeight:600,color:"#36F",fontFamily:"Poppins"}}>Competitors Analysis </Typography>
+                            <Typography variant="h6" sx={{fontWeight:600,fontFamily:"Poppins",color:"#454F5B",fontSize:{md:"22px",xs:"18px"}}}>I studied two major competitors - Alibaba (globally spreaded) IndiaMart (Indian Market) </Typography>
                             </Box>
                             {STATEMENT3?.map((item)=>(
-                                <Typography variant="body1" sx={{fontWeight:600,fontFamily:"Poppins",color:"#212B36"}}> • {item?.title} </Typography>
+                                <Typography variant="body1" sx={{fontWeight:600,fontFamily:"Poppins",color:"#212B36",fontSize:"14px"}}> • {item?.title} </Typography>
 
                             ))}
                         </Stack>
@@ -271,7 +271,7 @@ export default function TradeIndiaCaseStudyScreen() {
                             variants={pageVariants}
                             transition={pageTransition}
                         >
-                        <Typography variant="h5" sx={{fontWeight:600,color:"#212B36",mb:2}}>Ideology sketches</Typography>
+                        <Typography variant="h5" sx={{fontWeight:600,color:"#212B36",mb:2,fontFamily:"Poppins"}}>Ideology sketches</Typography>
                         <Box
                             component="img"
                             src={caseImage3}
@@ -291,7 +291,7 @@ export default function TradeIndiaCaseStudyScreen() {
                             variants={pageVariants}
                             transition={pageTransition}
                         >
-                        <Typography variant="h5" sx={{fontWeight:600,color:"#212B36",mb:2}}>High Fidelity Design</Typography>
+                        <Typography variant="h5" sx={{fontWeight:600,color:"#212B36",mb:2,fontFamily:"Poppins"}}>High Fidelity Design</Typography>
                         <Box
                             component="img"
                             src={caseImage4}
@@ -345,7 +345,7 @@ export default function TradeIndiaCaseStudyScreen() {
                         </StyledGrid>
                     </Grid>
                     <Grid  xs={12} md={10}>
-                        <Link href='mailto:nehachhillar07@gmail.com'>
+                        <Link href='mailto:nehachhillar07@gmail.com' style={{ textDecoration:"none"}}>
                         <Stack  direction={{md:"row",xs:"column"}} justifyContent="space-around" alignItems="center" spacing={4} sx={{mt:5,py:5,backgroundColor:"#FFFEE0"}}>
                             <Box
                                 component="img"

@@ -147,10 +147,11 @@ export default function PeopleManagementCaseStudyScreen() {
                                             sx={{
                                                 color: "#454F5B",
                                                 fontWeight: 500,
-                                                fontStyle: "normal"
+                                                fontStyle: "normal",
+                                                fontFamily:"Futura"
                                             }}>{item?.title}</Typography>
                                 <Typography variant={{md: "body1", xs: "body2"}}
-                                            sx={{fontWeight: 700, color: "#1B4111"}}>{item?.description}</Typography>
+                                            sx={{fontWeight: 700, color: "#1B4111",  fontFamily:"Futura-Bold"}}>{item?.description}</Typography>
                             </Stack>
                         ))}
                     </StyledGrid>
@@ -172,7 +173,9 @@ export default function PeopleManagementCaseStudyScreen() {
                                 p: 1,
                                 backgroundColor: "#EAF6D8",
                                 border: "0.5px solid #D3EEB3",
-                                textAlign: "center"
+                                textAlign: "center",
+                                fontWeight: 700,
+                                fontFamily: "Futura-Bold"
                             }}>{index+1}. {item}</Box>
                         ))}
                     </StyledGrid>
@@ -186,17 +189,17 @@ export default function PeopleManagementCaseStudyScreen() {
                         variants={pageVariants}
                         transition={pageTransition}>
                     <Stack spacing={2} justifyContent="start" alignItems="start">
-                        <Typography variant="h4" sx={{fontSize:{md:"30px",xs:"23px"},fontWeight: "700", fontFamily: "Public Sans", color: "#212B36"}}>Building
-                            Solutions, Not just HR Management Solftware</Typography>
+                        <Typography variant="h4" sx={{fontSize:{md:"30px",xs:"23px"},fontWeight: 700, fontFamily: "Futura-Bold", color: "#212B36"}}>Building
+                            Solutions, Not just HR Management Software</Typography>
                         <Box>
                             <Typography variant="h6" sx={{
-                                fontWeight: "700",
-                                fontFamily: "Public Sans",
-                                color: "#212B36"
+                                fontWeight: 700,
+                                fontFamily: "Futura-Bold",
+                                color: "#454F5B"
                             }}>Brief</Typography>
                             <Typography variant="body1" sx={{
-                                fontWeight: "500",
-                                fontFamily: "Public Sans",
+                                fontWeight: 500,
+                                fontFamily: "Futura",
                                 color: "#212B36"}}>
                                 TexlaCulture transformed the HR tech landscape with a complete DIY tool featuring easy policy configuration and a simpler design. Utilising the latest technology, the product enhances HR and employee engagement through personalised branding and themes. Within the first year, this customised, fully-fledged solution successfully acquired 12 customers and over 8,000 users globally.
                             </Typography>
@@ -213,15 +216,15 @@ export default function PeopleManagementCaseStudyScreen() {
                         transition={pageTransition}>
                             <Typography variant="h6" sx={{
                                 fontWeight: "700",
-                                fontFamily: "Public Sans",
-                                color: "#212B36"
+                                fontFamily: "Futura",
+                                color: "#454F5B"
                             }}>Problem Statement</Typography>
                     <Stack spacing={1}>
-                        <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#212B36"}}> •  Common issues include <Typography component="span" variant="body1" sx={{backgroundColor:"#FFFEE0",fontWeight:500,fontFamily:"Public Sans",color:"#212B36"}}> Complex navigation </Typography> and <Typography component="span" variant="body1" sx={{backgroundColor:"#FFFEE0",fontWeight:500,fontFamily:"Public Sans",color:"#212B36"}}> technical jargon unrelated to HR tasks. </Typography> </Typography>
-                        <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#212B36"}}> •  Frequent frustration due to the need to go <Typography component="span" variant="body1" sx={{backgroundColor:"#FFFEE0",fontWeight:500,fontFamily:"Public Sans",color:"#212B36"}}> back and forth to complete single actions. </Typography> </Typography>
-                        <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#212B36"}}> •  <Typography component="span" variant="body1" sx={{backgroundColor:"#FFFEE0",fontWeight:500,fontFamily:"Public Sans",color:"#212B36"}}> Lack of customizable policy </Typography> options lead to dissatisfaction and  <Typography component="span" variant="body1" sx={{backgroundColor:"#FFFEE0",fontWeight:500,fontFamily:"Public Sans",color:"#212B36"}}> forced compromises.</Typography> </Typography>
-                        <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#212B36"}}> •  Existing products <Typography component="span" variant="body1" sx={{backgroundColor:"#FFFEE0",fontWeight:500,fontFamily:"Public Sans",color:"#212B36"}}> fail to meet HR professionals needs </Typography> for a <Typography component="span" variant="body1" sx={{backgroundColor:"#FFFEE0",fontWeight:500,fontFamily:"Public Sans",color:"#212B36"}}> user-friendly, human-centric design. </Typography> </Typography>
-                        <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#212B36"}}> •  HR Veterans fails to get a product that simplifies workflows and effectively  <Typography component="span" variant="body1" sx={{backgroundColor:"#FFFEE0",fontWeight:500,fontFamily:"Public Sans",color:"#212B36"}}> engages employees. </Typography> </Typography>
+                        <Typography variant="body1" sx={{fontWeight:500,fontFamily: "Futura",color:"#212B36"}}> •  Common issues include <Typography component="span" variant="body1" sx={{backgroundColor:"#FFFEE0",fontWeight:500,fontFamily:"Futura",color:"#212B36"}}> Complex navigation </Typography> and <Typography component="span" variant="body1" sx={{backgroundColor:"#FFFEE0",fontWeight:500,fontFamily:"Futura",color:"#212B36"}}> technical jargon unrelated to HR tasks. </Typography> </Typography>
+                        <Typography variant="body1" sx={{fontWeight:500,fontFamily: "Futura",color:"#212B36"}}> •  Frequent frustration due to the need to go <Typography component="span" variant="body1" sx={{backgroundColor:"#FFFEE0",fontWeight:500,fontFamily: "Futura",color:"#212B36"}}> back and forth to complete single actions. </Typography> </Typography>
+                        <Typography variant="body1" sx={{fontWeight:500,fontFamily: "Futura",color:"#212B36"}}> •  <Typography component="span" variant="body1" sx={{backgroundColor:"#FFFEE0",fontWeight:500,fontFamily: "Futura",color:"#212B36"}}> Lack of customizable policy </Typography> options lead to dissatisfaction and  <Typography component="span" variant="body1" sx={{backgroundColor:"#FFFEE0",fontWeight:500,fontFamily: "Futura",color:"#212B36"}}> forced compromises.</Typography> </Typography>
+                        <Typography variant="body1" sx={{fontWeight:500,fontFamily: "Futura",color:"#212B36"}}> •  Existing products <Typography component="span" variant="body1" sx={{backgroundColor:"#FFFEE0",fontWeight:500,fontFamily: "Futura",color:"#212B36"}}> fail to meet HR professionals needs </Typography> for a <Typography component="span" variant="body1" sx={{backgroundColor:"#FFFEE0",fontWeight:500,fontFamily: "Futura",color:"#212B36"}}> user-friendly, human-centric design. </Typography> </Typography>
+                        <Typography variant="body1" sx={{fontWeight:500,fontFamily: "Futura",color:"#212B36"}}> •  HR Veterans fails to get a product that simplifies workflows and effectively  <Typography component="span" variant="body1" sx={{backgroundColor:"#FFFEE0",fontWeight:500,fontFamily: "Futura",color:"#212B36"}}> engages employees. </Typography> </Typography>
                     </Stack>
                     </motion.div>
                 </Grid>
@@ -247,27 +250,27 @@ export default function PeopleManagementCaseStudyScreen() {
                             transition={pageTransition}>
                       <Stack spacing={2} justifyContent="start" alignItems="start">
                           <Box>
-                              <Typography variant="h6" sx={{fontWeight:700,fontFamily:"Public Sans",color:"#454F5B"}}>Product Approach</Typography>
-                              <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#637381"}}>After detailed qualitative research with HR veterans, we identified several key areas to address:</Typography>
+                              <Typography variant="h6" sx={{fontWeight:700,fontFamily: "Futura",color:"#454F5B"}}>Product Approach</Typography>
+                              <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Futura",color:"#637381"}}>After detailed qualitative research with HR veterans, we identified several key areas to address:</Typography>
                           </Box>
                           <Box>
-                              <Typography variant="h6" sx={{fontWeight:700,fontFamily:"Public Sans",color:"#454F5B"}}>DIY Tool</Typography>
-                              <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#637381"}}> • Allows HRs to configure policies with ease.</Typography>
-                              <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#637381"}}> • Minimizes frustration and enhances user experience.</Typography>
+                              <Typography variant="h6" sx={{fontWeight:700,fontFamily:"Futura-Medium",color:"#454F5B"}}>DIY Tool</Typography>
+                              <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Futura",color:"#637381"}}> • Allows HRs to configure policies with ease.</Typography>
+                              <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Futura",color:"#637381"}}> • Minimizes frustration and enhances user experience.</Typography>
                           </Box>
                           <Box>
-                              <Typography variant="h6" sx={{fontWeight:700,fontFamily:"Public Sans",color:"#454F5B"}}>Easy Navigation</Typography>
-                              <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#637381"}}> • Simpler and more intuitive design to streamline navigation.</Typography>
-                              <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#637381"}}> • Reduces dependency on the product team and avoids delays in day-to-day activities.</Typography>
+                              <Typography variant="h6" sx={{fontWeight:700,fontFamily:"Futura",color:"#454F5B"}}>Easy Navigation</Typography>
+                              <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Futura",color:"#637381"}}> • Simpler and more intuitive design to streamline navigation.</Typography>
+                              <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Futura",color:"#637381"}}> • Reduces dependency on the product team and avoids delays in day-to-day activities.</Typography>
                           </Box>
                           <Box>
-                              <Typography variant="h6" sx={{fontWeight:700,fontFamily:"Public Sans",color:"#454F5B"}}>Latest Technology</Typography>
-                              <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#637381"}}> • Keeps the product up-to-date and reliable for any kind of customization possible.</Typography>
+                              <Typography variant="h6" sx={{fontWeight:700,fontFamily:"Futura",color:"#454F5B"}}>Latest Technology</Typography>
+                              <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Futura",color:"#637381"}}> • Keeps the product up-to-date and reliable for any kind of customization possible.</Typography>
                           </Box>
                           <Box>
-                              <Typography variant="h6" sx={{fontWeight:700,fontFamily:"Public Sans",color:"#454F5B"}}>Personalization</Typography>
-                              <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#637381"}}> • Personalize their experience with their own branding and theme</Typography>
-                              <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#637381"}}> • Deeper connection with the product and increases usability</Typography>
+                              <Typography variant="h6" sx={{fontWeight:700,fontFamily:"Futura",color:"#454F5B"}}>Personalization</Typography>
+                              <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Futura",color:"#637381"}}> • Personalize their experience with their own branding and theme</Typography>
+                              <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Futura",color:"#637381"}}> • Deeper connection with the product and increases usability</Typography>
                           </Box>
                       </Stack>
                         </motion.div>
@@ -279,20 +282,20 @@ export default function PeopleManagementCaseStudyScreen() {
                             exit="out"
                             variants={pageVariants}
                             transition={pageTransition}>
-                        <Typography variant="h5" sx={{fontWeight:700,fontFamily:"Public Sans",color:"#454F5B"}}>Target Marget</Typography>
+                        <Typography variant="h5" sx={{fontWeight:700,fontFamily:"Futura",color:"#454F5B"}}>Target Marget</Typography>
                        <StyledGrid>
                            {STATEMENT3?.map((item)=>(
                                <Box sx={{mt:1}}>
-                                   <Typography variant="body1" sx={{fontWeight:400,fontFamily:"Public Sans",color:"#454F5B"}}>{item?.title}</Typography>
+                                   <Typography variant="body1" sx={{fontWeight:400,fontFamily:"Futura",color:"#454F5B"}}>{item?.title}</Typography>
                                    <Box sx={{textAlign:"center",p:1,borderRadius:4,border:"1px solid #D3EEB3",backgroundColor:"rgba(234, 246, 216, 0.60)"}}>
-                                       <Typography variant="h6" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#454F5B"}}>{item?.topic}</Typography>
-                                       <Typography variant="h5" sx={{fontSize:{md:"28px",xs:"20px"},fontWeight:600,fontFamily:"Public Sans",color:"#454F5B"}}>{item?.count}</Typography>
+                                       <Typography variant="h6" sx={{fontWeight:500,fontFamily:"Futura",color:"#454F5B"}}>{item?.topic}</Typography>
+                                       <Typography variant="h5" sx={{fontSize:{md:"28px",xs:"20px"},fontWeight:600,fontFamily:"Poppins",color:"#454F5B"}}>{item?.count}</Typography>
                                    </Box>
                                </Box>
                            ))}
                        </StyledGrid>
                         <Box sx={{textAlign:"center",mt:2,p:2,borderRadius:4,border:"1px solid #D3EEB3",backgroundColor:"rgba(234, 246, 216, 0.60)"}}>
-                            <Typography variant="h5" sx={{fontSize:{md:"28px",xs:"20px"},fontWeight:600,fontFamily:"Public Sans",color:"#454F5B"}}>1.1 Million Companies Startups, SME’s, Large Enterprise </Typography>
+                            <Typography variant="h5" sx={{fontSize:{md:"26px",xs:"20px"},fontWeight:600,fontFamily:"Poppins",color:"#454F5B"}}>1.1 Million Companies Startups, SME’s, Large Enterprise </Typography>
                         </Box>
                         </motion.div>
                     </Grid>
@@ -315,8 +318,8 @@ export default function PeopleManagementCaseStudyScreen() {
                         </motion.div>
                     </Grid>
                     <Grid xs={12} md={10} sx={{borderRadius:4, mt: 5, py: 3, px: {lg: 3, xs: 3}}}>
-                        <Typography variant="h4" sx={{fontSize:{md:"30px",xs:"23px"},fontWeight:700,fontFamily:"Public Sans",color:"#454F5B"}}>Navigation System</Typography>
-                        <Typography variant="h5" sx={{fontSize:{md:"25px",xs:"17px"},mt:2,fontWeight:700,fontFamily:"Public Sans",color:"#454F5B"}}>Ideation / Approachable design Strategy</Typography>
+                        <Typography variant="h4" sx={{fontSize:{md:"30px",xs:"23px"},fontWeight:700,fontFamily:"Futura",color:"#454F5B"}}>Navigation System</Typography>
+                        <Typography variant="h5" sx={{fontSize:{md:"25px",xs:"17px"},mt:2,fontWeight:700,fontFamily:"Futura",color:"#454F5B"}}>Ideation / Approachable design Strategy</Typography>
                         <Grid container spacing={2} alignItems="start" justifyContent="center" sx={{mt:2,}}>
 
                             <Grid xs={12} md={6} >
@@ -344,10 +347,10 @@ export default function PeopleManagementCaseStudyScreen() {
                                     exit="out"
                                     variants={pageVariants}
                                     transition={pageTransition}>
-                             <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#919EAB"}}>Iteration 1</Typography>
-                             <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#454F5B"}}>Navigation bar has 4 major sections My Space, Team Space, HR Space, Admin. Each section has 10+ modules that can further expand with submodules.</Typography>
-                                <Typography variant="body1" sx={{mt:2,fontWeight:600,fontFamily:"Public Sans",color:"#212B36"}}> • Personalize their experience with their own branding and theme</Typography>
-                                <Typography variant="body1" sx={{fontWeight:600,fontFamily:"Public Sans",color:"#212B36"}}> • Deeper connection with the product and increases usability</Typography>
+                             <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Futura",color:"#919EAB"}}>Iteration 1</Typography>
+                             <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Futura",color:"#454F5B"}}>Navigation bar has 4 major sections My Space, Team Space, HR Space, Admin. Each section has 10+ modules that can further expand with submodules.</Typography>
+                                <Typography variant="body1" sx={{mt:2,fontWeight:600,fontFamily:"Futura",color:"#212B36"}}> • Personalize their experience with their own branding and theme</Typography>
+                                <Typography variant="body1" sx={{fontWeight:600,fontFamily:"Futura",color:"#212B36"}}> • Deeper connection with the product and increases usability</Typography>
                                 </motion.div>
                             </Grid>
                         </Grid>
@@ -361,10 +364,10 @@ export default function PeopleManagementCaseStudyScreen() {
                                     exit="out"
                                     variants={pageVariants}
                                     transition={pageTransition}>
-                                <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#919EAB"}}>Iteration 1</Typography>
-                                <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#454F5B"}}>Navigation bar has 4 major sections My Space, Team Space, HR Space, Admin. Each section has 10+ modules that can further expand with submodules.</Typography>
-                                <Typography variant="body1" sx={{mt:2,fontWeight:600,fontFamily:"Public Sans",color:"#212B36"}}> • Personalize their experience with their own branding and theme</Typography>
-                                <Typography variant="body1" sx={{fontWeight:600,fontFamily:"Public Sans",color:"#212B36"}}> • Deeper connection with the product and increases usability</Typography>
+                                <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Futura",color:"#919EAB"}}>Iteration 1</Typography>
+                                <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Futura",color:"#454F5B"}}>Navigation bar has 4 major sections My Space, Team Space, HR Space, Admin. Each section has 10+ modules that can further expand with submodules.</Typography>
+                                <Typography variant="body1" sx={{mt:2,fontWeight:600,fontFamily:"Futura",color:"#212B36"}}> • Personalize their experience with their own branding and theme</Typography>
+                                <Typography variant="body1" sx={{fontWeight:600,fontFamily:"Futura",color:"#212B36"}}> • Deeper connection with the product and increases usability</Typography>
                                 </motion.div>
                             </Grid>
                             <Grid xs={12} md={6} >
@@ -418,19 +421,19 @@ export default function PeopleManagementCaseStudyScreen() {
                             transition={pageTransition}>
                         <Stack spacing={2} justifyContent="start" alignItems="start">
                             <Box>
-                                <Typography variant="h6" sx={{fontWeight:700,fontFamily:"Public Sans",color:"#454F5B"}}>UX Approach Implemented</Typography>
-                                <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#637381"}}> • Side Panel with Icon labeling created more space for real content of product that amtters to users most.</Typography>
-                                <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#637381"}}> • To maximize screen width, Navigation can be hide.</Typography>
-                                <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#637381"}}> • Tool tip make it easy for users to remeber what the icon denote to.</Typography>
-                                <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#637381"}}> • Menu Option has segregated modes with search option.</Typography>
-                                <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#637381"}}> • Pin App allows users to select favourite and important app, that can be accessed anytime.</Typography>
+                                <Typography variant="h6" sx={{fontWeight:700,fontFamily:"Futura",color:"#454F5B"}}>UX Approach Implemented</Typography>
+                                <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Futura",color:"#637381"}}> • Side Panel with Icon labeling created more space for real content of product that amtters to users most.</Typography>
+                                <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Futura",color:"#637381"}}> • To maximize screen width, Navigation can be hide.</Typography>
+                                <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Futura",color:"#637381"}}> • Tool tip make it easy for users to remeber what the icon denote to.</Typography>
+                                <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Futura",color:"#637381"}}> • Menu Option has segregated modes with search option.</Typography>
+                                <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Futura",color:"#637381"}}> • Pin App allows users to select favourite and important app, that can be accessed anytime.</Typography>
                             </Box>
                         </Stack>
                         </motion.div>
                     </Grid>
                     <Grid xs={12} md={10} sx={{borderRadius:4, mt: 5, py: 3, px: {lg: 3, xs: 3}}}>
-                        <Typography variant="h4" sx={{fontSize:{md:"30px",xs:"23px"},fontWeight:700,fontFamily:"Public Sans",color:"#454F5B"}}>Personalized Theme</Typography>
-                        <Typography variant="h5" sx={{fontSize:{md:"23px",xs:"17px"},mt:2,fontWeight:700,fontFamily:"Public Sans",color:"#454F5B"}}>Ideation / Approachable design Strategy</Typography>
+                        <Typography variant="h4" sx={{fontSize:{md:"30px",xs:"23px"},fontWeight:700,fontFamily:"Futura",color:"#454F5B"}}>Personalized Theme</Typography>
+                        <Typography variant="h5" sx={{fontSize:{md:"23px",xs:"17px"},mt:2,fontWeight:700,fontFamily:"Futura",color:"#454F5B"}}>Ideation / Approachable design Strategy</Typography>
                         <Grid container spacing={2} alignItems="start" justifyContent="center" sx={{mt:2,}}>
                             <Grid xs={12} md={6} >
                                 <motion.div
@@ -458,14 +461,14 @@ export default function PeopleManagementCaseStudyScreen() {
                                     variants={pageVariants}
                                     transition={pageTransition}>
                                 <Box>
-                                <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#919EAB"}}>Iteration 1</Typography>
-                                <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#454F5B"}}>Keep color theme open for users to select as per the choice.</Typography>
-                                <Typography variant="body1" sx={{mt:2,fontWeight:600,fontFamily:"Public Sans",color:"#212B36"}}> During user testing, it was highlighted that HR professionals preferred a non-customizable interface, fixed to the brand's colors and design, to maintain consistency.</Typography>
+                                <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Futura",color:"#919EAB"}}>Iteration 1</Typography>
+                                <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Futura",color:"#454F5B"}}>Keep color theme open for users to select as per the choice.</Typography>
+                                <Typography variant="body1" sx={{mt:2,fontWeight:600,fontFamily:"Futura",color:"#212B36"}}> During user testing, it was highlighted that HR professionals preferred a non-customizable interface, fixed to the brand's colors and design, to maintain consistency.</Typography>
                                 </Box>
                                 <Box sx={{mt:5}}>
-                                    <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#919EAB"}}>Finalized Flow</Typography>
-                                    <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#454F5B"}}>Create universal palette and shades of it as primary palette.</Typography>
-                                    <Typography variant="body1" sx={{mt:2,fontWeight:600,fontFamily:"Public Sans",color:"#212B36"}}> Accordingly, Per client’s need color will be change from admin setting and all user’s will be engaged as per set brand’s palette.</Typography>
+                                    <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Futura",color:"#919EAB"}}>Finalized Flow</Typography>
+                                    <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Futura",color:"#454F5B"}}>Create universal palette and shades of it as primary palette.</Typography>
+                                    <Typography variant="body1" sx={{mt:2,fontWeight:600,fontFamily:"Futura",color:"#212B36"}}> Accordingly, Per client’s need color will be change from admin setting and all user’s will be engaged as per set brand’s palette.</Typography>
 
                                 </Box>
                                 </motion.div>
@@ -519,12 +522,12 @@ export default function PeopleManagementCaseStudyScreen() {
                             transition={pageTransition}>
                         <Stack spacing={2} justifyContent="start" alignItems="start">
                             <Box>
-                                <Typography variant="h6" sx={{fontWeight:700,fontFamily:"Public Sans",color:"#454F5B"}}>UX Approach Implemented</Typography>
-                                <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#637381"}}> • Setting panel operation creates a themed space for user.</Typography>
-                                <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#637381"}}> • Whether user want to use focus mode, or multi page mode.</Typography>
-                                <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#637381"}}> • Dark & Light theme for personalized choices.</Typography>
-                                <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#637381"}}> • System color theme set from admin setting that ensures an engagement between employees towards brands and give a feel of affinity.</Typography>
-                                <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#637381"}}> • It enables usability and user screen time increase.</Typography>
+                                <Typography variant="h6" sx={{fontWeight:700,fontFamily:"Futura",color:"#454F5B"}}>UX Approach Implemented</Typography>
+                                <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Futura",color:"#637381"}}> • Setting panel operation creates a themed space for user.</Typography>
+                                <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Futura",color:"#637381"}}> • Whether user want to use focus mode, or multi page mode.</Typography>
+                                <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Futura",color:"#637381"}}> • Dark & Light theme for personalized choices.</Typography>
+                                <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Futura",color:"#637381"}}> • System color theme set from admin setting that ensures an engagement between employees towards brands and give a feel of affinity.</Typography>
+                                <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Futura",color:"#637381"}}> • It enables usability and user screen time increase.</Typography>
                             </Box>
                         </Stack>
                         </motion.div>
@@ -536,7 +539,7 @@ export default function PeopleManagementCaseStudyScreen() {
                             exit="out"
                             variants={pageVariants}
                             transition={pageTransition}>
-                        <Typography variant="h5" sx={{mb:2,fontWeight:700,fontFamily:"Public Sans",color:"#454F5B"}}>Ideation | Product Strategies.</Typography>
+                        <Typography variant="h5" sx={{mb:2,fontWeight:700,fontFamily:"Futura",color:"#454F5B"}}>Ideation | Product Strategies.</Typography>
                         <Box
                             component="img"
                             src={caseImage10}
@@ -556,8 +559,8 @@ export default function PeopleManagementCaseStudyScreen() {
                             variants={pageVariants}
                             transition={pageTransition}>
                         <Stack spacing={3} >
-                            <Typography variant="body1" sx={{textAlign:"center",fontWeight:500,fontFamily:"Public Sans",color:"#454F5B"}}> For ideation, strategizing, and product discussions, I prefer using pen and paper, a whiteboard, or sketching over any digital tools. This approach allows for a free flow of creativity, enabling countless possible ideas to emerge.</Typography>
-                            <Typography variant="body1" sx={{textAlign:"center",fontWeight:700,fontFamily:"Public Sans",color:"#637381"}}> For both web and app development, I used this method for each module and submodule to understand, create solutions, finalize the flow, and determine possible features for MVP 1</Typography>
+                            <Typography variant="body1" sx={{textAlign:"center",fontWeight:500,fontFamily:"Futura",color:"#454F5B"}}> For ideation, strategizing, and product discussions, I prefer using pen and paper, a whiteboard, or sketching over any digital tools. This approach allows for a free flow of creativity, enabling countless possible ideas to emerge.</Typography>
+                            <Typography variant="body1" sx={{textAlign:"center",fontWeight:700,fontFamily:"Futura",color:"#637381"}}> For both web and app development, I used this method for each module and submodule to understand, create solutions, finalize the flow, and determine possible features for MVP 1</Typography>
 
                         </Stack>
                         </motion.div>
@@ -592,11 +595,11 @@ export default function PeopleManagementCaseStudyScreen() {
                             exit="out"
                             variants={pageVariants}
                             transition={pageTransition}>
-                        <Typography variant="h5" sx={{mb:2,fontWeight:700,fontFamily:"Public Sans",color:"#454F5B"}}>Design System</Typography>
-                                <Typography variant="body2" sx={{fontWeight:400,fontFamily:"Public Sans",color:"#454F5B"}}>To establish a unified design system ensuring consistent user interface (UI) elements across both web and mobile applications, thereby enhancing overall product cohesion and user experience.</Typography>
+                        <Typography variant="h5" sx={{mb:2,fontWeight:700,fontFamily:"Futura",color:"#454F5B"}}>Design System</Typography>
+                                <Typography variant="body2" sx={{fontWeight:400,fontFamily:"Futura",color:"#454F5B"}}>To establish a unified design system ensuring consistent user interface (UI) elements across both web and mobile applications, thereby enhancing overall product cohesion and user experience.</Typography>
                             <Box sx={{mt:3}}>
-                                <Typography variant="body1" sx={{fontWeight:600,fontFamily:"Public Sans",color:"#212B36"}}>I Developed a comprehensive design system that included a library of reusable components, standardized color palettes, typography, and layout grids. </Typography>
-                                <Typography variant="body1" sx={{mt:1.5,fontWeight:600,fontFamily:"Public Sans",color:"#212B36"}}> Handed over the design system components to the development team. </Typography>
+                                <Typography variant="body1" sx={{fontWeight:600,fontFamily:"Futura",color:"#212B36"}}>I Developed a comprehensive design system that included a library of reusable components, standardized color palettes, typography, and layout grids. </Typography>
+                                <Typography variant="body1" sx={{mt:1.5,fontWeight:600,fontFamily:"Futura",color:"#212B36"}}> Handed over the design system components to the development team. </Typography>
                             </Box>
                         </motion.div>
                     </Grid>
@@ -627,8 +630,8 @@ export default function PeopleManagementCaseStudyScreen() {
                             variants={pageVariants}
                             transition={pageTransition}>
                         <Stack spacing={3}>
-                            <Typography variant="h5" sx={{mb:2,fontWeight:700,fontFamily:"Public Sans",color:"#454F5B"}}>Hi-Fi Designs</Typography>
-                            <Typography variant="h4" sx={{fontSize:{md:"30px",xs:"23px"},mb:2,fontWeight:700,fontFamily:"Public Sans",color:"#161C24"}}>Login Screen</Typography>
+                            <Typography variant="h5" sx={{mb:2,fontWeight:700,fontFamily:"Futura",color:"#454F5B"}}>Hi-Fi Designs</Typography>
+                            <Typography variant="h4" sx={{fontSize:{md:"30px",xs:"23px"},mb:2,fontWeight:700,fontFamily:"Futura",color:"#161C24"}}>Login Screen</Typography>
                             <Box
                                 component="img"
                                 src={caseImage14}
@@ -650,7 +653,7 @@ export default function PeopleManagementCaseStudyScreen() {
                             variants={pageVariants}
                             transition={pageTransition}>
                         <Stack spacing={3}>
-                             <Typography variant="h4" sx={{fontSize:{md:"30px",xs:"23px"},mb:2,fontWeight:700,fontFamily:"Public Sans",color:"#161C24"}}>Home Page</Typography>
+                             <Typography variant="h4" sx={{fontSize:{md:"30px",xs:"23px"},mb:2,fontWeight:700,fontFamily:"Futura",color:"#161C24"}}>Home Page</Typography>
                             <Box
                                 component="img"
                                 src={caseImage15}
@@ -672,7 +675,7 @@ export default function PeopleManagementCaseStudyScreen() {
                             variants={pageVariants}
                             transition={pageTransition}>
                         <Stack spacing={3}>
-                            <Typography variant="h4" sx={{fontSize:{md:"30px",xs:"23px"},mb:2,fontWeight:700,fontFamily:"Public Sans",color:"#161C24"}}>Time Office</Typography>
+                            <Typography variant="h4" sx={{fontSize:{md:"30px",xs:"23px"},mb:2,fontWeight:700,fontFamily:"Futura",color:"#161C24"}}>Time Office</Typography>
                             <Box
                                 component="img"
                                 src={caseImage16}
@@ -694,7 +697,7 @@ export default function PeopleManagementCaseStudyScreen() {
                             variants={pageVariants}
                             transition={pageTransition}>
                         <Stack spacing={3}>
-                            <Typography variant="h4" sx={{fontSize:{md:"30px",xs:"23px"},mb:2,fontWeight:700,fontFamily:"Public Sans",color:"#161C24"}}>Performance</Typography>
+                            <Typography variant="h4" sx={{fontSize:{md:"30px",xs:"23px"},mb:2,fontWeight:700,fontFamily:"Futura",color:"#161C24"}}>Performance</Typography>
                             <Box
                                 component="img"
                                 src={caseImage17}
@@ -716,7 +719,7 @@ export default function PeopleManagementCaseStudyScreen() {
                             variants={pageVariants}
                             transition={pageTransition}>
                         <Stack spacing={3}>
-                            <Typography variant="h4" sx={{fontSize:{md:"30px",xs:"23px"},mb:2,fontWeight:700,fontFamily:"Public Sans",color:"#161C24"}}>Learnings</Typography>
+                            <Typography variant="h4" sx={{fontSize:{md:"30px",xs:"23px"},mb:2,fontWeight:700,fontFamily:"Futura",color:"#161C24"}}>Learnings</Typography>
                             <Box
                                 component="img"
                                 src={caseImage18}
@@ -738,13 +741,13 @@ export default function PeopleManagementCaseStudyScreen() {
                             variants={pageVariants}
                             transition={pageTransition}>
                         <Stack spacing={3} justifyContent="start" alignItems="start">
-                            <Typography variant="h6" sx={{fontSize:{md:"22px",xs:"15px"},mb:2,fontWeight:600,fontFamily:"Public Sans",color:"#000"}}>Here are the high-fidelity designs for an overview of each module. You can access the full product using the credentials below:</Typography>
+                            <Typography variant="h6" sx={{fontSize:{md:"22px",xs:"15px"},mb:2,fontWeight:600,fontFamily:"Futura",color:"#000"}}>Here are the high-fidelity designs for an overview of each module. You can access the full product using the credentials below:</Typography>
                                <Box sx={{p:2,borderRadius:4,border:"1px solid #D3EEB3",backgroundColor:"rgba(234, 246, 216, 0.60)"}}>
-                                   <Typography variant="body1" sx={{fontWeight:600,fontFamily:"Public Sans",color:"#000"}}>url: https://dev.texlaculture.ai/</Typography>
-                                   <Typography variant="body1" sx={{fontWeight:600,fontFamily:"Public Sans",color:"#000"}}>User Name: 24</Typography>
-                                   <Typography variant="body1" sx={{fontWeight:600,fontFamily:"Public Sans",color:"#000"}}>Password: 1234</Typography>
+                                   <Typography variant="body1" sx={{fontWeight:600,fontFamily:"Futura",color:"#000"}}>url: https://dev.texlaculture.ai/</Typography>
+                                   <Typography variant="body1" sx={{fontWeight:600,fontFamily:"Futura",color:"#000"}}>User Name: 24</Typography>
+                                   <Typography variant="body1" sx={{fontWeight:600,fontFamily:"Futura",color:"#000"}}>Password: 1234</Typography>
                                </Box>
-                            <Typography variant="h5" sx={{fontSize:{md:"22px",xs:"15px"},mb:2,fontWeight:700,fontFamily:"Public Sans",color:"#161C24"}}>Feel free to explore the live product :)</Typography>
+                            <Typography variant="h5" sx={{fontSize:{md:"22px",xs:"15px"},mb:2,fontWeight:700,fontFamily:"Futura",color:"#161C24"}}>Feel free to explore the live product :)</Typography>
 
                         </Stack>
                         </motion.div>
@@ -760,8 +763,8 @@ export default function PeopleManagementCaseStudyScreen() {
                             exit="out"
                             variants={pageVariants}
                             transition={pageTransition}>
-                        <Typography variant="body1" sx={{fontWeight:700,fontFamily:"Public Sans",color:"#000"}}>After creating high-fidelity designs, we prototyped each module for initial testing across multiple departments.</Typography>
-                        <Typography variant="body1" sx={{mt:4,fontWeight:700,fontFamily:"Public Sans",color:"#000"}}>After creating high-fidelity designs, we prototyped each module for initial testing across multiple departments. This testing aimed to understand how quickly users could perform actions, identify if they needed assistance with any tasks, and uncover any concerns that arose during internal testing.
+                        <Typography variant="body1" sx={{fontWeight:700,fontFamily:"Futura",color:"#000"}}>After creating high-fidelity designs, we prototyped each module for initial testing across multiple departments.</Typography>
+                        <Typography variant="body1" sx={{mt:4,fontWeight:700,fontFamily:"Futura",color:"#000"}}>After creating high-fidelity designs, we prototyped each module for initial testing across multiple departments. This testing aimed to understand how quickly users could perform actions, identify if they needed assistance with any tasks, and uncover any concerns that arose during internal testing.
                             After creating high-fidelity designs, we prototyped each module for initial testing across multiple departments .</Typography>
                         </motion.div>
                     </Grid>
@@ -798,14 +801,14 @@ export default function PeopleManagementCaseStudyScreen() {
                             variants={pageVariants}
                             transition={pageTransition}>
                         <Stack spacing={2} justifyContent="start" alignItems="start">
-                            <Typography variant="h4" sx={{fontSize:{md:"30px",xs:"23px"},fontWeight:700,fontFamily:"Public Sans",color:"#161C24"}}>Usability Testing</Typography>
-                            <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#454F6B"}}>I consider usability testing as a key part of the design process which can defined by 5 components: learnability, efficiency, memorability, error, and satisfaction. In a nutshell, usability is an essential factor that plays a vital role in success of a product.</Typography>
-                            <Typography variant="body1" sx={{fontWeight:700,fontFamily:"Public Sans",color:"#212B36"}}>Usability testing performed with out first 3 customers that were live implemented with all the modules, free of cost.</Typography>
+                            <Typography variant="h4" sx={{fontSize:{md:"30px",xs:"23px"},fontWeight:700,fontFamily:"Futura",color:"#161C24"}}>Usability Testing</Typography>
+                            <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Futura",color:"#454F6B"}}>I consider usability testing as a key part of the design process which can defined by 5 components: learnability, efficiency, memorability, error, and satisfaction. In a nutshell, usability is an essential factor that plays a vital role in success of a product.</Typography>
+                            <Typography variant="body1" sx={{fontWeight:700,fontFamily:"Futura",color:"#212B36"}}>Usability testing performed with out first 3 customers that were live implemented with all the modules, free of cost.</Typography>
                             <StyledGrid>
                                 {STATEMENT4?.map((item)=>(
                                     <Box sx={{p:2,borderRadius:4,border:"1px solid #D3EEB3",backgroundColor:"rgba(234, 246, 216, 0.60)", }}>
-                                        <Typography variant="h6" sx={{fontWeight:700,fontFamily:"Public Sans",color:"#454F5B"}}>{item?.title}</Typography>
-                                        <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#637381"}}>{item?.topic}</Typography>
+                                        <Typography variant="h6" sx={{fontWeight:700,fontFamily:"Futura",color:"#454F5B"}}>{item?.title}</Typography>
+                                        <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Futura",color:"#637381"}}>{item?.topic}</Typography>
                                     </Box>
                                 ))}
                             </StyledGrid>
@@ -822,10 +825,10 @@ export default function PeopleManagementCaseStudyScreen() {
                         <StyledGrid>
                             {STATEMENT5?.map((item)=>(
                                 <Box sx={{p:2,borderRadius:4,border:"1px solid #D3EEB3",backgroundColor:"rgba(234, 246, 216, 0.60)", }}>
-                                    <Typography variant="h6" sx={{fontWeight:700,fontFamily:"Public Sans",color:"#454F5B"}}>{item?.title}</Typography>
-                                    <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#637381"}}> •  {item?.topic1}</Typography>
-                                    <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#637381"}}> • {item?.topic2}</Typography>
-                                    <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Public Sans",color:"#637381"}}> • {item?.topic3}</Typography>
+                                    <Typography variant="h6" sx={{fontWeight:700,fontFamily:"Futura",color:"#454F5B"}}>{item?.title}</Typography>
+                                    <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Futura",color:"#637381"}}> •  {item?.topic1}</Typography>
+                                    <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Futura",color:"#637381"}}> • {item?.topic2}</Typography>
+                                    <Typography variant="body1" sx={{fontWeight:500,fontFamily:"Futura",color:"#637381"}}> • {item?.topic3}</Typography>
                                 </Box>
                             ))}
                         </StyledGrid>
@@ -867,7 +870,7 @@ export default function PeopleManagementCaseStudyScreen() {
                             exit="out"
                             variants={pageVariants}
                             transition={pageTransition}>
-                        <Link href='mailto:nehachhillar07@gmail.com'>
+                        <Link href='mailto:nehachhillar07@gmail.com' style={{ textDecoration:"none",}}>
                         <Stack direction={{md:"row",xs:"column"}} justifyContent="space-around" alignItems="center" spacing={4} sx={{mt:5,py:5,backgroundColor:"#FFFEE0"}}>
                             <Box
                                 component="img"
@@ -885,7 +888,7 @@ export default function PeopleManagementCaseStudyScreen() {
                                     },
                                     textAlign:"center",
                                     cursor: "pointer",
-                                    textDecoration:"none",
+                                    textDecorationLine:"none",
                                     fontWeight: 500,
                                     fontFamily: "Futura",
                                     color: "#212B36"

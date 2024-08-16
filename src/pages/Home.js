@@ -9,7 +9,7 @@ import TrendingFlatIcon from '@mui/icons-material/TrendingFlat';
 import Scrollbar from "../Components/scrollbar";
 import {PATH_DASHBOARD} from "../routes/paths";
 import {useNavigate} from "react-router-dom";
-import caseImage1 from "../images/caseStudy3/caseImage1.png";
+import {styled} from "@mui/material/styles";
 
 const pageVariants = {
     initial: {
@@ -31,6 +31,12 @@ const pageTransition = {
     ease: "anticipate",
     duration: 0.8
 };
+
+const StyledGrid = styled('div')(({theme}) => ({
+    display: 'grid',
+    gap: '20px',
+    gridTemplateColumns: "repeat(auto-fit, minmax(150px,1fr))"
+}));
 
 
 export default function Home() {
@@ -62,16 +68,16 @@ export default function Home() {
             id: 3,
             photo: homeCard3,
             title1: "Understanding / User Interface ",
-            title2: "About Us Page Redesign to gain user’s trust &",
+            title2: "About Us Page Redesign to gain user’s trust & confidence.",
             title3: "@Trade India / B2B Experience",
-            title4: "Simplified employee engagement and easy access of employment",
+            title4: "Simplified employee engagement and easy access of employment related tasks.",
             case: PATH_DASHBOARD.caseStudy3,
             textcolor: "#E11B22",
             bgcolor: "#FDEFEF"
         },
     ]
     return (
-        <Box sx={{p: 2,mt:5, background: "linear-gradient(-225deg, #FFF9EB 0%, #FFF9EB 100%)", px: {md: 12, xs: 5}}}>
+        <Box sx={{p: 2,mt:5, background: "linear-gradient(-225deg, #FFF9EB 0%, #FFF9EB 100%)", px: {lg: 12,sm:3, xs: 5}}}>
             <Stack justifyContent="center" alignItems="center">
                 <motion.div
                     initial="initial"
@@ -89,22 +95,25 @@ export default function Home() {
                     variants={pageVariants}
                     transition={pageTransition}
                 >
-                <Stack spacing={1} justifyContent="center" alignItems="center" sx={{mt: -5}}>
+                <Stack spacing={2} justifyContent="center" alignItems="center" sx={{mt: -5}}>
                         <Typography variant="h4" sx={{
-                            fontSize: {md:"42px",xs:"34px"}, fontWeight: 700, fontFamily: "Futura", textDecorationLine: "underline",
+                            fontSize: {md:"42px",xs:"34px"}, fontWeight: 700, fontFamily: "Poppins", textDecorationLine: "underline",
                             textDecorationThickness: "5px", textDecorationColor: "#FFA500",textUnderlineOffset: "0.8px",textUnderlinePosition: "auto",
                         }}>Neha Chhillar</Typography>
-                        <Typography sx={{fontSize: "24px", fontWeight: 700, fontFamily: "Futura", color: "#454F5B"}}>UI/UX
+                        <Typography sx={{fontSize: "24px", fontWeight: 700, fontFamily: "Poppins", color: "#454F5B"}}>UI/UX
                             DESIGNER</Typography>
                         <Typography sx={{
-                            fontSize: "20px",
+                            fontSize: {md:"20px",xs:"16px"},
                             fontWeight: 500,
-                            fontFamily: "Futura",
+                            fontFamily: "Poppins",
                             color: "#454F5B",
-                            fontStyle: "italic"
+                            fontStyle: "italic",
+                            textAlign:"center"
                         }}>Crafting designs where <Typography component="span"
-                                                              sx={{color: "#B76E00"}}> utility </Typography>meets <Typography
-                            component="span" sx={{color: "#B76E00"}}>aesthetic</Typography>, balancing user experience
+                                                              sx={{color: "#B76E00",  fontSize: {md:"20px",xs:"16px"},
+                                                                  fontWeight: 500, textAlign:"center", fontFamily: "Poppins",}}> utility </Typography>meets <Typography
+                            component="span" sx={{color: "#B76E00", textAlign:"center",  fontSize: {md:"20px",xs:"16px"},
+                            fontWeight: 500, fontFamily: "Poppins",}}>aesthetic</Typography>, balancing user experience
                             with business requirements.</Typography>
                 </Stack>
                 </motion.div>
@@ -129,25 +138,24 @@ function HomeCard({data, index}) {
     const navigate = useNavigate()
 
     return (
-        <Box sx={{px: {sm: 20, xs: 0}}}>
+        <Box sx={{px: {xl:20,lg:0,sm: 10, xs: 0}}}>
             <Card onClick={() => navigate(data?.case)} sx={{
-                borderRadius: 6, mt: 8, border: '1px solid',
+                borderRadius: 6, mt: 4, border: '1px solid',
                 borderColor: 'grey.300',
                 boxShadow: "none",
                 cursor: "pointer", backgroundColor: data?.bgcolor
             }}>
                 <Stack direction={{lg: "row", xs: "column"}}>
-                    <Box>
                         <Box
                             component="img"
                             src={data?.photo}
                             alt="Responsive"
                             sx={{
-                                width: '100%', // Makes the image responsive
-                                height: 'auto', // Maintains aspect ratio
+                                width: {lg:'50%',xs:"100%"}, // Makes the image responsive
+                                height: '100%', // Maintains aspect ratio
+                                backgroundColor:"#FFFFFF"
                             }}
                         />
-                    </Box>
                     <Box>
                         <Stack spacing={{md:4,xs:2}} sx={{px: 4, py: 2}}>
                             <Typography sx={{
@@ -157,18 +165,12 @@ function HomeCard({data, index}) {
                                 color: "#919EAB"
                             }}>{data?.title1}</Typography>
                             <Box>
-                                <Typography sx={{
+                                <Typography  sx={{
                                     color: data?.textcolor,
-                                    fontSize: {md:"24px",xs:"17px"},
+                                    fontSize: {md:"19px",xs:"17px"},
                                     fontWeight: 700,
-                                    fontFamily: "Futura"
+                                    fontFamily: "Poppins"
                                 }}>{data?.title2}</Typography>
-                                {data?.id === 3 && <Typography sx={{
-                                    color: data?.textcolor,
-                                    fontSize: {md:"24px",xs:"17px"},
-                                    fontWeight: 700,
-                                    fontFamily: "Futura"
-                                }}>confidence.</Typography>}
                                 <Typography sx={{
                                     fontSize: "14px",
                                     fontWeight: 500,
@@ -183,10 +185,7 @@ function HomeCard({data, index}) {
                                     fontFamily: "Futura",
                                     color: "#212B36"
                                 }}>{data?.title4}</Typography>
-                                {data?.id === 3 && <Typography
-                                    sx={{fontSize: "18px", fontWeight: 500, fontFamily: "Futura", color: "#212B36"}}>related
-                                    tasks.</Typography>}
-                            </Box>
+                                  </Box>
                             <Stack direction="row" alignItems="center" gap={1} sx={{mt: 4}}>
                                 <Typography sx={{
                                     '&:hover': {

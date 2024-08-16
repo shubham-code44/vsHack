@@ -107,15 +107,15 @@ export default function WebDesignCaseStudyScreen()
             <Stack justifyContent="center" alignItems="center">
                 <Stack spacing={1} justifyContent="center" alignItems="center" sx={{mt:5}}>
 
-                     <Typography sx={{fontSize:"16px",fontWeight:500,fontFamily:"Futura",color:"#637381",fontStyle:"italic"}}>Digital Platform For A SaaS Product</Typography>
+                     <Typography sx={{fontSize:"16px",fontWeight:500,fontFamily:"Poppins",color:"#637381",fontStyle:"italic"}}>Digital Platform For A SaaS Product</Typography>
                     <Link href="https://texlaculture.ai/" underline="none">
                     <Stack direction="row" alignItems="center" gap={1} sx={{mt:4}}>
-                        <Typography sx={{'&:hover': {textDecorationLine: "underline",textDecorationThickness: "4px",textDecorationColor:"#FFA500"},fontSize:"18px",fontWeight:500,fontFamily:"Futura",color:"#212B36"}}>Texlaculture&apos;s Website </Typography>
+                        <Typography sx={{'&:hover': {textDecorationLine: "underline",textDecorationThickness: "4px",textDecorationColor:"#FFA500"},fontSize:"18px",fontWeight:500,fontFamily:"Poppins",color:"#212B36"}}>Texlaculture&apos;s Website </Typography>
                         <TrendingFlatIcon  />
                     </Stack>
                     </Link>
                     <Stack direction="row" alignItems="center" justifyContent="center">
-                        <Typography variant="h5" sx={{fontFamily:"Futura",color:"#1939B7",fontWeight:700}}>A challenging project to make TexlaCulture website live in a week.</Typography>
+                        <Typography variant="h5" sx={{fontFamily:"Poppins",color:"#1939B7",fontWeight:700,fontSize:{md:"18px",xs:"15px"},textAlign:"center"}}>A challenging project to make TexlaCulture website live in a week.</Typography>
                     </Stack>
                     <Grid container spacing={2} alignItems="start" justifyContent="center" sx={{px:{lg:35,xs:"10"}}} >
                         <Grid  xs={12} sx={{mt:2}}>
@@ -146,7 +146,7 @@ export default function WebDesignCaseStudyScreen()
                                     variants={pageVariants}
                                     transition={pageTransition}
                                 >
-                                <Typography variant="body1">{item?.title}</Typography>
+                                <Typography variant="body1" sx={{fontWeight:600,fontSize:{md:"18px",xs:"15px"},fontFamily:"Poppins",color:"#454F5B"}}>{item?.title}</Typography>
                                 </motion.div>
                             </Grid>
                             <Grid item xs={12} lg={10}>
@@ -157,7 +157,7 @@ export default function WebDesignCaseStudyScreen()
                                     variants={pageVariants}
                                     transition={pageTransition}
                                 >
-                                <Typography variant="body1">
+                                <Typography variant="body1" sx={{fontWeight:500,color:"#212B36",fontSize:{md:"16px",xs:"13px"},fontFamily:"Poppins"}}>
                                     {item?.description}
                                 </Typography>
                                 </motion.div>
@@ -172,7 +172,7 @@ export default function WebDesignCaseStudyScreen()
                                 variants={pageVariants}
                                 transition={pageTransition}
                             >
-                            <Typography variant="h5" sx={{color:"#C4CDD5",fontWeight:700}}>Sprint 1</Typography>
+                            <Typography variant="h5" sx={{color:"#C4CDD5",fontWeight:700,fontFamily:"Poppins"}}>Sprint 1</Typography>
                             </motion.div>
                         </Grid>
                         <Grid  xs={12} sx={{mt:5}}>
@@ -183,8 +183,8 @@ export default function WebDesignCaseStudyScreen()
                                 variants={pageVariants}
                                 transition={pageTransition}
                             >
-                            <Typography variant="h5" sx={{fontWeight:700}}>Research and Strategy</Typography>
-                            <Typography variant="body1" sx={{color:"#454F5B"}}>The first sprint focused on laying a strong foundation for our redesign strategy through exhaustive market research, clear definition of website goals, brand identity analysis, and understanding TexlaCulture's unique culture and target audience.</Typography>
+                            <Typography variant="h5" sx={{color:"#000",fontWeight:700,fontSize:{md:"28px",xs:"22px"},fontFamily:"Poppins"}}>Research and Strategy</Typography>
+                            <Typography variant="body1"  sx={{fontWeight:500,color:"#454F5B",fontSize:{md:"16px",xs:"13px"},fontFamily:"Poppins"}}>The first sprint focused on laying a strong foundation for our redesign strategy through exhaustive market research, clear definition of website goals, brand identity analysis, and understanding TexlaCulture's unique culture and target audience.</Typography>
                             </motion.div>
                         </Grid>
                         <Grid  xs={12}  sx={{mt:4,p:3,backgroundColor:"#D6E4FF"}}>
@@ -194,8 +194,8 @@ export default function WebDesignCaseStudyScreen()
                                 exit="out"
                                 variants={pageVariants}
                                 transition={pageTransition}>
-                            <Typography variant="h6" sx={{fontWeight:700}}>Insights:</Typography>
-                            <Typography variant="body1" sx={{color:"#454F5B"}}>During this phase, I dived deep into the HR management software market to understand the competitive landscape. I identified a significant opportunity gap in competitors website i.e. uniqueness and individual vibe and culture that could be seen in their products. I took it forward and started setting a goal towards process.</Typography>
+                            <Typography variant="h6" sx={{fontWeight:700,fontFamily:"Poppins",fontSize:{md:"18px",xs:"15px"}}}>Insights:</Typography>
+                            <Typography variant="body1" sx={{fontWeight:500,color:"#454F5B",fontFamily:"Poppins",fontSize:{md:"16px",xs:"13px"}}}>During this phase, I dived deep into the HR management software market to understand the competitive landscape. I identified a significant opportunity gap in competitors website i.e. uniqueness and individual vibe and culture that could be seen in their products. I took it forward and started setting a goal towards process.</Typography>
                             </motion.div>
                         </Grid>
                         <motion.div
@@ -207,8 +207,8 @@ export default function WebDesignCaseStudyScreen()
                         >
                         {SPRINT?.map((item)=>(
                             <Grid  xs={12} sx={{mt:4}}>
-                                <Typography variant="h6" sx={{fontWeight:700}}>{item?.title}</Typography>
-                                <Typography variant="body1" sx={{mt:0.3,color:"#454F5B"}}>{item?.description}</Typography>
+                                <Typography variant="h6" sx={{fontWeight:700,color:"#212B36",fontFamily:"Poppins",fontSize:{md:"18px",xs:"15px"}}}>{item?.title}</Typography>
+                                <Typography variant="body1" sx={{fontWeight:500,mt:0.3,color:"#454F5B",fontFamily:"Poppins",fontSize:{md:"16px",xs:"13px"}}}>{item?.description}</Typography>
                             </Grid>
                         ))}
                         </motion.div>
@@ -219,7 +219,7 @@ export default function WebDesignCaseStudyScreen()
                                 exit="out"
                                 variants={pageVariants}
                                 transition={pageTransition}>
-                            <Typography variant="h6" sx={{color:"#919EAB",fontWeight:500,fontFamily:"Futura",fontStyle:"italic"}}>I consulted HR veterans on how I could win users’ trust and spark curiosity that would lead them to make a sales inquiry.</Typography>
+                            <Typography variant="h6" sx={{color:"#919EAB",fontWeight:500,fontFamily:"Poppins",fontStyle:"italic"}}>I consulted HR veterans on how I could win users’ trust and spark curiosity that would lead them to make a sales inquiry.</Typography>
                             </motion.div>
                         </Grid>
                         <Grid  xs={12} sx={{mt:8}}>
@@ -229,8 +229,8 @@ export default function WebDesignCaseStudyScreen()
                                 exit="out"
                                 variants={pageVariants}
                                 transition={pageTransition}>
-                            <Typography variant="h6" sx={{fontWeight:700}}>Benchmarking & Moodboard </Typography>
-                            <Typography variant="body1" sx={{mt:0.3,color:"#454F5B"}}>Planning a path for a design that's not just about aesthetics but functionality and simplicity.</Typography>
+                            <Typography variant="h6" sx={{fontWeight:700,fontFamily:"Poppins",fontSize:{md:"18px",xs:"15px"}}}>Benchmarking & Moodboard </Typography>
+                            <Typography variant="body1" sx={{mt:0.3,color:"#454F5B",fontWeight:500,fontFamily:"Poppins",fontSize:{md:"16px",xs:"13px"}}}>Planning a path for a design that's not just about aesthetics but functionality and simplicity.</Typography>
                             </motion.div>
                         </Grid>
                         <Grid  xs={12} sx={{mt:5}}>
@@ -259,8 +259,8 @@ export default function WebDesignCaseStudyScreen()
                                 variants={pageVariants}
                                 transition={pageTransition}>
                             <Stack justifyContent="flex-end" alignItems="end">
-                                <Typography variant="body1" sx={{fontWeight:700,color:"#212B3C"}}>It was decided to go with one color hierarchy, due to the simplified and consistent  </Typography>
-                                <Typography component="span" variant="body1" sx={{fontWeight:700,color:"#212B3C"}}> design that leads user to understand and navigate through the content.</Typography>
+                                <Typography variant="body1" sx={{fontWeight:700,color:"#212B3C",fontFamily:"Poppins",fontSize:{md:"16px",xs:"13px"}}}>It was decided to go with one color hierarchy, due to the simplified and consistent  </Typography>
+                                <Typography component="span" variant="body1" sx={{fontWeight:700,color:"#212B3C",fontFamily:"Poppins",fontSize:{md:"16px",xs:"13px"}}}> design that leads user to understand and navigate through the content.</Typography>
                             </Stack>
                             </motion.div>
                         </Grid>
@@ -271,8 +271,8 @@ export default function WebDesignCaseStudyScreen()
                                 exit="out"
                                 variants={pageVariants}
                                 transition={pageTransition}>
-                            <Typography variant="h6" sx={{fontWeight:700}}>Learnings</Typography>
-                            <Typography variant="body1" sx={{color:"#454F5B"}}>
+                            <Typography variant="h6" sx={{fontWeight:700,fontFamily:"Poppins",fontSize:{md:"18px",xs:"15px"}}}>Learnings</Typography>
+                            <Typography variant="body1" sx={{color:"#454F5B",fontWeight:500,fontFamily:"Poppins",fontSize:{md:"16px",xs:"13px"}}}>
                                 During this phase, I dived deep into the HR management software market to understand the competitive landscape. I identified a significant opportunity gap in competitors website i.e. uniqueness and individual vibe and culture that could be seen in their products. I took it forward and started setting a goal towards process.
                             </Typography>
                             </motion.div>
@@ -296,8 +296,8 @@ export default function WebDesignCaseStudyScreen()
                                 exit="out"
                                 variants={pageVariants}
                                 transition={pageTransition}>
-                            <Typography variant="h5" sx={{fontWeight:700}}>Sketching and Designing</Typography>
-                            <Typography variant="body1" sx={{color:"#454F5B"}}>After completing the research and strategy phase, we moved on to ideation and sketching. This stage involved brainstorming sessions to generate creative ideas and sketching out initial concepts for the website design. The goal was to create a visually appealing and user-friendly interface that aligns with TexlaCulture's branding and objectives.</Typography>
+                            <Typography variant="h5" sx={{fontWeight:700,fontFamily:"Poppins",fontSize:{md:"18px",xs:"15px"}}}>Sketching and Designing</Typography>
+                            <Typography variant="body1" sx={{color:"#454F5B",fontWeight:500,fontFamily:"Poppins",fontSize:{md:"16px",xs:"13px"}}}>After completing the research and strategy phase, we moved on to ideation and sketching. This stage involved brainstorming sessions to generate creative ideas and sketching out initial concepts for the website design. The goal was to create a visually appealing and user-friendly interface that aligns with TexlaCulture's branding and objectives.</Typography>
                             </motion.div>
                             </Grid>
                         <Grid  xs={12}  sx={{mt:4,p:3,backgroundColor:"#D6E4FF"}}>
@@ -307,8 +307,8 @@ export default function WebDesignCaseStudyScreen()
                                 exit="out"
                                 variants={pageVariants}
                                 transition={pageTransition}>
-                            <Typography variant="h6" sx={{fontWeight:700}}>Insights:</Typography>
-                            <Typography variant="body1" sx={{color:"#454F5B"}}>Delivering a high-quality project on time was made possible through effective collaboration, leveraging design systems, using agile methodology, strategic planning, clear communication, and adaptability.</Typography>
+                            <Typography variant="h6" sx={{fontWeight:700,fontFamily:"Poppins",fontSize:{md:"18px",xs:"15px"}}}>Insights:</Typography>
+                            <Typography variant="body1" sx={{color:"#454F5B",fontWeight:500,fontFamily:"Poppins",fontSize:{md:"16px",xs:"13px"}}}>Delivering a high-quality project on time was made possible through effective collaboration, leveraging design systems, using agile methodology, strategic planning, clear communication, and adaptability.</Typography>
                             </motion.div>
                         </Grid>
                         <Grid  xs={12} sx={{mt:5}}>
@@ -337,8 +337,8 @@ export default function WebDesignCaseStudyScreen()
                                 variants={pageVariants}
                                 transition={pageTransition}>
                             <Stack justifyContent="flex-end" alignItems="end">
-                                <Typography variant="body1" sx={{fontWeight:700,color:"#212B3C"}}>It was decided to go with one color hierarchy, due to the simplified and consistent  </Typography>
-                                <Typography component="span" variant="body1" sx={{fontWeight:700,color:"#212B3C"}}> design that leads user to understand and navigate through the content.</Typography>
+                                <Typography variant="body1" sx={{fontWeight:700,color:"#212B3C",fontFamily:"Poppins",fontSize:{md:"16px",xs:"13px"}}}>It was decided to go with one color hierarchy, due to the simplified and consistent  </Typography>
+                                <Typography component="span" variant="body1" sx={{fontWeight:700,color:"#212B3C",fontFamily:"Poppins",fontSize:{md:"16px",xs:"13px"}}}> design that leads user to understand and navigate through the content.</Typography>
                             </Stack>
                             </motion.div>
                         </Grid>
@@ -361,8 +361,8 @@ export default function WebDesignCaseStudyScreen()
                                 exit="out"
                                 variants={pageVariants}
                                 transition={pageTransition}>
-                            <Typography variant="h5" sx={{fontWeight:700}}>Final Delivery and Development</Typography>
-                            <Typography variant="body1" sx={{color:"#454F5B"}}>With the designs finalized, the next step was to prepare them for development. This involved creating detailed design specifications and assets to ensure a smooth handover to the development team. We prioritized clarity and precision in our documentation to minimize any potential misunderstandings during the development phase.</Typography>
+                            <Typography variant="h5" sx={{fontWeight:700,fontFamily:"Poppins",fontSize:{md:"18px",xs:"15px"}}}>Final Delivery and Development</Typography>
+                            <Typography variant="body1" sx={{mt:0.5,color:"#454F5B",fontWeight:500,fontFamily:"Poppins",fontSize:{md:"16px",xs:"13px"}}}>With the designs finalized, the next step was to prepare them for development. This involved creating detailed design specifications and assets to ensure a smooth handover to the development team. We prioritized clarity and precision in our documentation to minimize any potential misunderstandings during the development phase.</Typography>
                             </motion.div>
                         </Grid>
                         <Grid  xs={12} sx={{mt:5}}>
@@ -391,9 +391,9 @@ export default function WebDesignCaseStudyScreen()
                                 variants={pageVariants}
                                 transition={pageTransition}>
                             <Stack justifyContent="flex-end" alignItems="end">
-                                <Typography variant="body1" sx={{fontWeight:700,color:"#212B3C"}}>Designed the hero section to instantly convey that users can <Typography component="span" variant="subtitle1" sx={{fontWeight:700,color:"#000000"}}>manage the entire employment </Typography>  </Typography>
-                                <Typography variant="subtitle1" sx={{fontWeight:700,color:"#000000"}}> journey with the product, <Typography component="span" variant="body1" sx={{fontWeight:700,color:"#212B3C"}}>showcasing interconnected products that keep </Typography> <Typography component="span" variant="subtitle1" sx={{fontWeight:700,color:"#000000"}}>employees</Typography></Typography>
-                                <Typography variant="subtitle1" sx={{fontWeight:700}}> engaged, <Typography component="span" variant="body1" sx={{fontWeight:700,color:"#212B3C"}}>with clear visuals and brief descriptions to quickly </Typography> <Typography component="span" variant="subtitle1" sx={{fontWeight:700,color:"#000000"}}> highlight the product's benefit.</Typography></Typography>
+                                <Typography variant="body1" sx={{fontWeight:700,color:"#212B3C",fontFamily:"Poppins",fontSize:{md:"16px",xs:"13px"}}}>Designed the hero section to instantly convey that users can <Typography component="span" variant="subtitle1" sx={{fontWeight:700,color:"#000000",fontFamily:"Poppins",fontSize:{md:"16px",xs:"13px"}}}>manage the entire employment </Typography>  </Typography>
+                                <Typography variant="subtitle1" sx={{fontWeight:700,color:"#000000",fontFamily:"Poppins",fontSize:{md:"16px",xs:"13px"}}}> journey with the product, <Typography component="span" variant="body1" sx={{fontWeight:700,color:"#212B3C",fontFamily:"Poppins",fontSize:{md:"16px",xs:"13px"}}}>showcasing interconnected products that keep </Typography> <Typography component="span" variant="subtitle1" sx={{fontWeight:700,color:"#000000",fontFamily:"Poppins",fontSize:{md:"16px",xs:"13px"}}}>employees</Typography></Typography>
+                                <Typography variant="subtitle1" sx={{fontWeight:700,fontFamily:"Poppins",fontSize:{md:"16px",xs:"13px"}}}> engaged, <Typography component="span" variant="body1" sx={{fontWeight:700,color:"#212B3C",fontFamily:"Poppins",fontSize:{md:"16px",xs:"13px"}}}>with clear visuals and brief descriptions to quickly </Typography> <Typography component="span" variant="subtitle1" sx={{fontWeight:700,color:"#000000",fontFamily:"Poppins",fontSize:{md:"16px",xs:"13px"}}}> highlight the product's benefit.</Typography></Typography>
                             </Stack>
                             </motion.div>
                         </Grid>
@@ -423,8 +423,8 @@ export default function WebDesignCaseStudyScreen()
                                 variants={pageVariants}
                                 transition={pageTransition}>
                             <Stack justifyContent="flex-end" alignItems="end">
-                                <Typography variant="body1" sx={{fontWeight:700,color:"#212B3C"}}>Emphasizes our unique features and <Typography component="span" variant="subtitle1" sx={{fontWeight:700,color:"#000000"}}>customization capabilities as a startup, </Typography> <Typography component="span" variant="body1" sx={{fontWeight:700,color:"#212B3C"}}> using balanced </Typography>  </Typography>
-                                <Typography  variant="body1" sx={{fontWeight:700,color:"#212B3C"}}> descriptions to showcase how our solutions stand out and can be tailored to <Typography component="span" variant="subtitle1" sx={{fontWeight:700,color:"#000000"}}>specific industry & needs.</Typography> </Typography>
+                                <Typography variant="body1" sx={{fontWeight:700,color:"#212B3C",fontFamily:"Poppins",fontSize:{md:"16px",xs:"13px"}}}>Emphasizes our unique features and <Typography component="span" variant="subtitle1" sx={{fontWeight:700,color:"#000000",fontFamily:"Poppins",fontSize:{md:"16px",xs:"13px"}}}>customization capabilities as a startup, </Typography> <Typography component="span" variant="body1" sx={{fontWeight:700,color:"#212B3C",fontFamily:"Poppins",fontSize:{md:"16px",xs:"13px"}}}> using balanced </Typography>  </Typography>
+                                <Typography  variant="body1" sx={{fontWeight:700,color:"#212B3C",fontFamily:"Poppins",fontSize:{md:"16px",xs:"13px"}}}> descriptions to showcase how our solutions stand out and can be tailored to <Typography component="span" variant="subtitle1" sx={{fontWeight:700,color:"#000000",fontFamily:"Poppins",fontSize:{md:"16px",xs:"13px"}}}>specific industry & needs.</Typography> </Typography>
                             </Stack>
                             </motion.div>
                         </Grid>
@@ -454,8 +454,8 @@ export default function WebDesignCaseStudyScreen()
                                 variants={pageVariants}
                                 transition={pageTransition}>
                             <Stack justifyContent="flex-end" alignItems="end">
-                                <Typography variant="body1" sx={{fontWeight:700,color:"#212B3C"}}>Builds <Typography component="span" variant="subtitle1" sx={{fontWeight:700,color:"#000000"}}>trust through compelling facts and customer reviews, </Typography> <Typography component="span" variant="body1" sx={{fontWeight:700,color:"#212B3C"}}> ending with</Typography> <Typography component="span" variant="subtitle1" sx={{fontWeight:700,color:"#000000"}}>FAQs </Typography> to ensure </Typography>
-                                <Typography  variant="body1" sx={{fontWeight:700,color:"#212B3C"}}>  users have a thorough understanding of our offerings and feel confident in their decision. </Typography>
+                                <Typography variant="body1" sx={{fontWeight:700,color:"#212B3C",fontFamily:"Poppins",fontSize:{md:"16px",xs:"13px"}}}>Builds <Typography component="span" variant="subtitle1" sx={{fontWeight:700,color:"#000000",fontFamily:"Poppins",fontSize:{md:"16px",xs:"13px"}}}>trust through compelling facts and customer reviews, </Typography> <Typography component="span" variant="body1" sx={{fontWeight:700,color:"#212B3C",fontFamily:"Poppins",fontSize:{md:"16px",xs:"13px"}}}> ending with</Typography> <Typography component="span" variant="subtitle1" sx={{fontWeight:700,color:"#000000",fontFamily:"Poppins",fontSize:{md:"16px",xs:"13px"}}}>FAQs </Typography> to ensure </Typography>
+                                <Typography  variant="body1" sx={{fontWeight:700,color:"#212B3C",fontFamily:"Poppins",fontSize:{md:"16px",xs:"13px"}}}>  users have a thorough understanding of our offerings and feel confident in their decision. </Typography>
                             </Stack>
                             </motion.div>
                         </Grid>
@@ -484,8 +484,8 @@ export default function WebDesignCaseStudyScreen()
                                 exit="out"
                                 variants={pageVariants}
                                 transition={pageTransition}>
-                            <Typography variant="h5" sx={{fontWeight:800}}>Website Landing Page Redesign</Typography>
-                            <Typography variant="body1" sx={{color:"#454F5B"}}>Below presented is the cleanest 2.O version of the website. This version is under development and will be available once it is feasible and seo friendly tried and tested.</Typography>
+                            <Typography variant="h5" sx={{fontWeight:800,fontFamily:"Poppins",fontSize:{md:"18px",xs:"15px"}}}>Website Landing Page Redesign</Typography>
+                            <Typography variant="body1" sx={{mt:0.5,color:"#454F5B",fontWeight:500,fontFamily:"Poppins",fontSize:{md:"16px",xs:"13px"}}}>Below presented is the cleanest 2.O version of the website. This version is under development and will be available once it is feasible and seo friendly tried and tested.</Typography>
                             </motion.div>
                         </Grid>
                         <Grid  xs={12} sx={{mt:7}}>
@@ -584,7 +584,7 @@ export default function WebDesignCaseStudyScreen()
                             </StyledGrid>
                         </Grid>
                         <Grid  xs={12} md={10}>
-                            <Link href='mailto:nehachhillar07@gmail.com'>
+                            <Link href='mailto:nehachhillar07@gmail.com' style={{ textDecoration:"none",}}>
                             <Stack direction={{md:"row",xs:"column"}} justifyContent="space-around" alignItems="center" spacing={4} sx={{mt:5,py:5,backgroundColor:"#FFFEE0"}}>
                                 <Box
                                     component="img"
