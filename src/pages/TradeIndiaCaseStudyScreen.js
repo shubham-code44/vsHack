@@ -337,7 +337,7 @@ export default function TradeIndiaCaseStudyScreen() {
                                         {data?.id===1 && <Typography sx={{fontSize:"16px",fontWeight:500,fontFamily:"Futura",color:"#212B36"}}>Software.</Typography>}
                                     </Box>
                                     <Stack direction="row" alignItems="center" gap={1} sx={{mt:4}}>
-                                        <Typography sx={{'&:hover': {textDecorationLine: "underline",textDecorationThickness: "4px",textDecorationColor:"#FFA500"},fontSize:"18px",fontWeight:500,fontFamily:"Futura",color:"#212B36"}}>Case Study </Typography>
+                                        <Typography sx={{'&:hover': {textDecorationLine: "underline",textDecorationSkipInk: "none",textDecorationThickness: "4px",textDecorationColor:"#FFA500"},fontSize:"18px",fontWeight:500,fontFamily:"Futura",color:"#454F5B"}}>Case Study </Typography>
                                         <TrendingFlatIcon  />
                                     </Stack>
                                 </Stack>
@@ -361,6 +361,7 @@ export default function TradeIndiaCaseStudyScreen() {
                                 '&:hover': {
                                     textDecorationLine: "underline",
                                     textDecorationThickness: "4px",
+                                    textDecorationSkipInk: "none",
                                     textDecorationColor: "#FFA500"
                                 },
                                 textAlign:"center",

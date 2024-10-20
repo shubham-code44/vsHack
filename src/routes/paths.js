@@ -1,12 +1,12 @@
 const PATH_DASHBOARD = {
-    root: '/ncDesign',
-    profile: '/ncDesign/myspace/home',
-    about: '/ncDesign/myspace/about',
-    resume: '/ncDesign/myspace/resume',
-    home: '/ncDesign/myspace/home',
-    caseStudy1: '/ncDesign/myspace/caseStudy1',
-    caseStudy2: '/ncDesign/myspace/caseStudy2',
-    caseStudy3: '/ncDesign/myspace/caseStudy3',
+    root: '/vsHack',
+    profile: '/vsHack/home',
+    about: '/vsHack/about',
+    resume: '/vsHack/resume',
+    home: '/vsHack/home',
+    caseStudy1: '/vsHack/caseStudy1',
+    caseStudy2: '/vsHack/caseStudy2',
+    caseStudy3: '/vsHack/caseStudy3',
     settings: '/login',
     // Add more paths as needed
 };

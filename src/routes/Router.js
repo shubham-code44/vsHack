@@ -18,25 +18,20 @@ export default function Router() {
     return useRoutes([
         {
             path: '/',
-            element: <Navigate to="/ncDesign/myspace/home" replace />,
+            element: <Navigate to="/vsHack/home" replace />,
         },
         {
-            path: 'ncDesign',
+            path: 'vsHack',
             element: <MainLayout />,
             children: [
-                {
-                    path: 'myspace',
-                    children: [
-                        {path: 'about', element:  <About />},
-                        {path: 'resume', element:  <Resume />},
-                        {path: 'profile', element:  <Profile />},
-                        {path: 'home', element:  <Home />},
-                        {path: 'caseStudy1', element:  <PeopleManagementCaseStudyScreen />},
-                        {path: 'caseStudy2', element:  <WebDesignCaseStudyScreen />},
-                        {path: 'caseStudy3', element:  <TradeIndiaCaseStudyScreen />},
-                    ],
-                },
-            ]
+                {path: 'about', element:  <About />},
+                {path: 'resume', element:  <Resume />},
+                {path: 'profile', element:  <Profile />},
+                {path: 'home', element:  <Home />},
+                {path: 'caseStudy1', element:  <PeopleManagementCaseStudyScreen />},
+                {path: 'caseStudy2', element:  <WebDesignCaseStudyScreen />},
+                {path: 'caseStudy3', element:  <TradeIndiaCaseStudyScreen />},
+            ],
         },
         {
             path: 'login',

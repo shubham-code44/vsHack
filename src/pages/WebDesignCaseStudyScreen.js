@@ -110,7 +110,7 @@ export default function WebDesignCaseStudyScreen()
                      <Typography sx={{fontSize:"16px",fontWeight:500,fontFamily:"Poppins",color:"#637381",fontStyle:"italic"}}>Digital Platform For A SaaS Product</Typography>
                     <Link href="https://texlaculture.ai/" underline="none">
                     <Stack direction="row" alignItems="center" gap={1} sx={{mt:4}}>
-                        <Typography sx={{'&:hover': {textDecorationLine: "underline",textDecorationThickness: "4px",textDecorationColor:"#FFA500"},fontSize:"18px",fontWeight:500,fontFamily:"Poppins",color:"#212B36"}}>Texlaculture&apos;s Website </Typography>
+                        <Typography sx={{'&:hover': {textDecorationLine: "underline",textDecorationThickness: "4px",textDecorationSkipInk: "none",textDecorationColor:"#FFA500"},fontSize:"18px",fontWeight:500,fontFamily:"Poppins",color:"#212B36"}}>Texlaculture&apos;s Website </Typography>
                         <TrendingFlatIcon  />
                     </Stack>
                     </Link>
@@ -565,18 +565,18 @@ export default function WebDesignCaseStudyScreen()
                             <StyledGrid>
                                 {CARD_CONTENT?.map((data)=>(
                                     <Stack onClick={() => navigate(data?.case)} spacing={3} sx={{cursor:"pointer",px:4,py:2,backgroundColor:data?.bgcolor}}>
-                                        <Typography sx={{fontSize:"14px",fontWeight:500,fontFamily:"Futura",color:"#919EAB"}}>{data?.title1}</Typography>
+                                        <Typography sx={{fontSize:"14px",fontWeight:500,fontFamily:"Poppins",color:"#919EAB"}}>{data?.title1}</Typography>
                                         <Box>
-                                            <Typography variant="h6" sx={{color:data?.textcolor,fontWeight:700,fontFamily:"Futura"}}>{data?.title2}</Typography>
-                                            <Typography sx={{fontSize:"14px",fontWeight:500,fontFamily:"Futura",color:"#454F5B"}}>{data?.title3}</Typography>
+                                            <Typography variant="h6" sx={{color:data?.textcolor,fontWeight:700,fontFamily:"Poppins"}}>{data?.title2}</Typography>
+                                            <Typography sx={{fontSize:"14px",fontWeight:500,fontFamily:"Poppins",color:"#454F5B"}}>{data?.title3}</Typography>
                                         </Box>
                                         <Box>
-                                            <Typography sx={{fontSize:"16px",fontWeight:500,fontFamily:"Futura",color:"#212B36"}}>{data?.title4}</Typography>
-                                            {data?.id===3 && <Typography sx={{fontSize:"16px",fontWeight:500,fontFamily:"Futura",color:"#212B36"}}>related tasks.</Typography>}
-                                            {data?.id===1 && <Typography sx={{fontSize:"16px",fontWeight:500,fontFamily:"Futura",color:"#212B36"}}>Software.</Typography>}
+                                            <Typography sx={{fontSize:"16px",fontWeight:500,fontFamily:"Poppins",color:"#212B36"}}>{data?.title4}</Typography>
+                                            {data?.id===3 && <Typography sx={{fontSize:"16px",fontWeight:500,fontFamily:"Poppins",color:"#212B36"}}>related tasks.</Typography>}
+                                            {data?.id===1 && <Typography sx={{fontSize:"16px",fontWeight:500,fontFamily:"Poppins",color:"#212B36"}}>Software.</Typography>}
                                         </Box>
                                         <Stack direction="row" alignItems="center" gap={1} sx={{mt:4}}>
-                                            <Typography sx={{'&:hover': {textDecorationLine: "underline",textDecorationThickness: "4px",textDecorationColor:"#FFA500"},fontSize:"18px",fontWeight:500,fontFamily:"Futura",color:"#212B36"}}>Case Study </Typography>
+                                            <Typography sx={{'&:hover': {textDecorationSkipInk: "none",textDecorationLine: "underline",textDecorationThickness: "4px",textDecorationColor:"#FFA500"},fontSize:"18px",fontWeight:500,fontFamily:"Poppins",color:"#454F5B"}}>Case Study </Typography>
                                             <TrendingFlatIcon  />
                                         </Stack>
                                     </Stack>
@@ -600,13 +600,14 @@ export default function WebDesignCaseStudyScreen()
                                     '&:hover': {
                                         textDecorationLine: "underline",
                                         textDecorationThickness: "4px",
+                                        textDecorationSkipInk: "none",
                                         textDecorationColor: "#FFA500"
                                     },
                                     textAlign:"center",
                                     cursor: "pointer",
                                     fontWeight: 500,
                                     textDecoration:"none",
-                                    fontFamily: "Futura",
+                                    fontFamily: "Poppins",
                                     color: "#212B36"
                                 }}>{connect}</Typography>
                             </Stack>
